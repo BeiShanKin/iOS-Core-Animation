@@ -14,6 +14,7 @@
 		285786481CC6713B00E1A4B0 /* _1_CALayerTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285786471CC6713B00E1A4B0 /* _1_CALayerTreeTests.swift */; };
 		285786531CC6713C00E1A4B0 /* _1_CALayerTreeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285786521CC6713C00E1A4B0 /* _1_CALayerTreeUITests.swift */; };
 		285786631CC6729F00E1A4B0 /* CATreeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285786621CC6729F00E1A4B0 /* CATreeController.swift */; };
+		285C126D1CC7674B00ADF45F /* ContentsScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285C126C1CC7674B00ADF45F /* ContentsScaleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		285786521CC6713C00E1A4B0 /* _1_CALayerTreeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _1_CALayerTreeUITests.swift; sourceTree = "<group>"; };
 		285786541CC6713C00E1A4B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		285786621CC6729F00E1A4B0 /* CATreeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CATreeController.swift; sourceTree = "<group>"; };
+		285C126C1CC7674B00ADF45F /* ContentsScaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsScaleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,8 @@
 		285786311CC6713B00E1A4B0 /* 01-CALayerTree */ = {
 			isa = PBXGroup;
 			children = (
+				285C126E1CC7675100ADF45F /* Controller */,
 				285786321CC6713B00E1A4B0 /* AppDelegate.swift */,
-				285786621CC6729F00E1A4B0 /* CATreeController.swift */,
 				285786361CC6713B00E1A4B0 /* Main.storyboard */,
 				285786391CC6713B00E1A4B0 /* Assets.xcassets */,
 				2857863B1CC6713B00E1A4B0 /* LaunchScreen.storyboard */,
@@ -123,6 +125,15 @@
 				285786541CC6713C00E1A4B0 /* Info.plist */,
 			);
 			path = "01-CALayerTreeUITests";
+			sourceTree = "<group>";
+		};
+		285C126E1CC7675100ADF45F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				285786621CC6729F00E1A4B0 /* CATreeController.swift */,
+				285C126C1CC7674B00ADF45F /* ContentsScaleViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				285786331CC6713B00E1A4B0 /* AppDelegate.swift in Sources */,
+				285C126D1CC7674B00ADF45F /* ContentsScaleViewController.swift in Sources */,
 				285786631CC6729F00E1A4B0 /* CATreeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +497,7 @@
 				285786591CC6713C00E1A4B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2857865A1CC6713C00E1A4B0 /* Build configuration list for PBXNativeTarget "01-CALayerTreeTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +506,7 @@
 				2857865C1CC6713C00E1A4B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2857865D1CC6713C00E1A4B0 /* Build configuration list for PBXNativeTarget "01-CALayerTreeUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +515,7 @@
 				2857865F1CC6713C00E1A4B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

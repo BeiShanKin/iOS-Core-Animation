@@ -35,15 +35,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="CALayerTree" id="XQL-NV-GF2">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="0ZU-M9-eqC">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="o4I-IU-wfU">
-                                <rect key="frame" x="233" y="7" width="71" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="next"/>
-                                <connections>
-                                    <segue destination="5eT-RR-W9V" kind="push" id="NtB-Ac-ZiV"/>
-                                </connections>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" title="contents" id="744-dj-UjG">
+                            <connections>
+                                <segue destination="5eT-RR-W9V" kind="push" id="r1v-1F-xv7"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -51,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="156" y="397"/>
         </scene>
-        <!--View Controller-->
+        <!--ContetsScale-->
         <scene sceneID="Gp3-0W-doF">
             <objects>
-                <viewController id="5eT-RR-W9V" sceneMemberID="viewController">
+                <viewController id="5eT-RR-W9V" customClass="ContentsScaleViewController" customModule="_1_CALayerTree" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RNJ-tw-Rfj"/>
                         <viewControllerLayoutGuide type="bottom" id="pIg-J9-bQD"/>
@@ -62,13 +57,69 @@
                     <view key="view" contentMode="scaleToFill" id="IAP-J0-edA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYD-Nr-fIh">
+                                <rect key="frame" x="0.0" y="538" width="132" height="30"/>
+                                <state key="normal" title="改变contentGravity"/>
+                                <connections>
+                                    <action selector="gravityClick:" destination="5eT-RR-W9V" eventType="touchUpInside" id="RmA-IP-upM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7P-au-eUR">
+                                <rect key="frame" x="188" y="538" width="132" height="30"/>
+                                <state key="normal" title="改变contentsScale"/>
+                                <connections>
+                                    <action selector="scaleClick:" destination="5eT-RR-W9V" eventType="touchUpInside" id="VIM-Nc-R38"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFg-cL-LYg">
+                                <rect key="frame" x="0.0" y="64" width="92" height="30"/>
+                                <state key="normal" title="contentsRect"/>
+                                <connections>
+                                    <action selector="contentsRectClick:" destination="5eT-RR-W9V" eventType="touchUpInside" id="PRB-tH-MVz"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pIg-J9-bQD" firstAttribute="top" secondItem="u7P-au-eUR" secondAttribute="bottom" id="0ci-ND-lD8"/>
+                            <constraint firstItem="TYD-Nr-fIh" firstAttribute="leading" secondItem="IAP-J0-edA" secondAttribute="leading" id="5aC-eG-uSt"/>
+                            <constraint firstItem="dFg-cL-LYg" firstAttribute="top" secondItem="RNJ-tw-Rfj" secondAttribute="bottom" id="8xZ-IT-c67"/>
+                            <constraint firstAttribute="trailing" secondItem="u7P-au-eUR" secondAttribute="trailing" id="Rzj-5E-Pir"/>
+                            <constraint firstItem="pIg-J9-bQD" firstAttribute="top" secondItem="TYD-Nr-fIh" secondAttribute="bottom" id="Xfv-4Z-Fpa"/>
+                            <constraint firstItem="dFg-cL-LYg" firstAttribute="leading" secondItem="IAP-J0-edA" secondAttribute="leading" id="fEt-JB-4ov"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="XuD-nN-8vK"/>
+                    <navigationItem key="navigationItem" title="ContetsScale" id="XuD-nN-8vK">
+                        <barButtonItem key="rightBarButtonItem" title="custom" id="1I3-i2-Ict">
+                            <connections>
+                                <segue destination="pQb-Dj-8zk" kind="push" id="qA6-04-F8M"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Fk-nA-hkv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="517" y="397"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tZF-dL-7p5">
+            <objects>
+                <viewController id="pQb-Dj-8zk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c8M-Oc-49d"/>
+                        <viewControllerLayoutGuide type="bottom" id="vtf-gL-5l1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6ha-Fz-NgD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OYB-SD-k5N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hgB-sr-TKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="867" y="397"/>
         </scene>
     </scenes>
 </document>
