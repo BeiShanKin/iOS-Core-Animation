@@ -102,10 +102,10 @@
             </objects>
             <point key="canvasLocation" x="517" y="397"/>
         </scene>
-        <!--View Controller-->
+        <!--CustomDrawing-->
         <scene sceneID="tZF-dL-7p5">
             <objects>
-                <viewController id="pQb-Dj-8zk" sceneMemberID="viewController">
+                <viewController id="pQb-Dj-8zk" customClass="DrawViewController" customModule="_1_CALayerTree" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="c8M-Oc-49d"/>
                         <viewControllerLayoutGuide type="bottom" id="vtf-gL-5l1"/>
@@ -115,7 +115,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="OYB-SD-k5N"/>
+                    <navigationItem key="navigationItem" title="CustomDrawing" id="OYB-SD-k5N"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hgB-sr-TKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

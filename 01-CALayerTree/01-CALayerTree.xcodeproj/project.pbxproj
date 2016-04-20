@@ -15,6 +15,8 @@
 		285786531CC6713C00E1A4B0 /* _1_CALayerTreeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285786521CC6713C00E1A4B0 /* _1_CALayerTreeUITests.swift */; };
 		285786631CC6729F00E1A4B0 /* CATreeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285786621CC6729F00E1A4B0 /* CATreeController.swift */; };
 		285C126D1CC7674B00ADF45F /* ContentsScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285C126C1CC7674B00ADF45F /* ContentsScaleViewController.swift */; };
+		285C12721CC76D4D00ADF45F /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285C12711CC76D4D00ADF45F /* DrawViewController.swift */; };
+		285C12761CC76D7B00ADF45F /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285C12751CC76D7B00ADF45F /* DrawView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		285786541CC6713C00E1A4B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		285786621CC6729F00E1A4B0 /* CATreeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CATreeController.swift; sourceTree = "<group>"; };
 		285C126C1CC7674B00ADF45F /* ContentsScaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsScaleViewController.swift; sourceTree = "<group>"; };
+		285C12711CC76D4D00ADF45F /* DrawViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
+		285C12751CC76D7B00ADF45F /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		285786311CC6713B00E1A4B0 /* 01-CALayerTree */ = {
 			isa = PBXGroup;
 			children = (
+				285C12741CC76D6A00ADF45F /* View */,
 				285C126E1CC7675100ADF45F /* Controller */,
 				285786321CC6713B00E1A4B0 /* AppDelegate.swift */,
 				285786361CC6713B00E1A4B0 /* Main.storyboard */,
@@ -132,8 +137,17 @@
 			children = (
 				285786621CC6729F00E1A4B0 /* CATreeController.swift */,
 				285C126C1CC7674B00ADF45F /* ContentsScaleViewController.swift */,
+				285C12711CC76D4D00ADF45F /* DrawViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		285C12741CC76D6A00ADF45F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				285C12751CC76D7B00ADF45F /* DrawView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				285C12721CC76D4D00ADF45F /* DrawViewController.swift in Sources */,
+				285C12761CC76D7B00ADF45F /* DrawView.swift in Sources */,
 				285786331CC6713B00E1A4B0 /* AppDelegate.swift in Sources */,
 				285C126D1CC7674B00ADF45F /* ContentsScaleViewController.swift in Sources */,
 				285786631CC6729F00E1A4B0 /* CATreeController.swift in Sources */,
