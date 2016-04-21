@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="lX2-dK-FoB">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="mWe-Pb-6co">
+            <objects>
+                <navigationController id="lX2-dK-FoB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="G0x-he-Af3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ujp-eH-MYA" kind="relationship" relationship="rootViewController" id="uvT-ze-Tu7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHy-uO-0Y9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42" y="277"/>
+        </scene>
+        <!--CornerRadius-->
+        <scene sceneID="EUD-qe-RdA">
+            <objects>
+                <viewController id="ujp-eH-MYA" customClass="CornerRadiusViewController" customModule="_4_VisionLayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="azs-4c-Yow"/>
+                        <viewControllerLayoutGuide type="bottom" id="55z-8K-B0K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UPN-Hh-fs7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UU9-tJ-6UM">
+                                <rect key="frame" x="211" y="102" width="100" height="100"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OKS-w8-WC2">
+                                        <rect key="frame" x="-49" y="-35" width="100" height="100"/>
+                                        <color key="backgroundColor" red="0.94509803920000002" green="0.55294117649999996" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RQC-Jp-d1Q">
+                                <rect key="frame" x="36" y="102" width="100" height="100"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2DT-h1-eYg">
+                                        <rect key="frame" x="-45" y="-36" width="100" height="100"/>
+                                        <color key="backgroundColor" red="0.94509803920000002" green="0.55294117649999996" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TfR-dJ-qY3">
+                                <rect key="frame" x="110" y="334" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.78823529410000004" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CornerRadius" id="uoG-JS-izT"/>
+                    <connections>
+                        <outlet property="view1" destination="RQC-Jp-d1Q" id="zUc-jY-952"/>
+                        <outlet property="view2" destination="UU9-tJ-6UM" id="cnn-kT-MO7"/>
+                        <outlet property="view3" destination="TfR-dJ-qY3" id="iWN-jf-f5d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z3b-y6-BKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="277"/>
+        </scene>
+    </scenes>
+</document>
