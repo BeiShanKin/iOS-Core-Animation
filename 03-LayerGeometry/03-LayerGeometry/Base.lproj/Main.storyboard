@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8yY-97-6KT">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ZQQ-7s-N2W">
+            <objects>
+                <navigationController id="8yY-97-6KT" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PRW-pY-ae2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="UDW-6o-LFC" kind="relationship" relationship="rootViewController" id="fiv-J8-OV5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g8U-QW-ffL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-397" y="336"/>
+        </scene>
+        <!--anchorPoint-->
+        <scene sceneID="RtW-hr-i0i">
+            <objects>
+                <viewController id="UDW-6o-LFC" customClass="AnchorPointViewController" customModule="_3_LayerGeometry" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b5n-de-cTF"/>
+                        <viewControllerLayoutGuide type="bottom" id="hMW-Wj-sZp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="318-ta-juw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ClockFace" translatesAutoresizingMaskIntoConstraints="NO" id="Rg5-8c-dqD">
+                                <rect key="frame" x="32" y="156" width="256" height="256"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HourHand" translatesAutoresizingMaskIntoConstraints="NO" id="0dl-Of-taE">
+                                <rect key="frame" x="145" y="210" width="30" height="97"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MinuteHand" translatesAutoresizingMaskIntoConstraints="NO" id="vU2-J9-xyK">
+                                <rect key="frame" x="150" y="202" width="20" height="105"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SecondHand" translatesAutoresizingMaskIntoConstraints="NO" id="0uu-Ir-WTn">
+                                <rect key="frame" x="156" y="205" width="8" height="102"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rg5-8c-dqD" firstAttribute="centerX" secondItem="318-ta-juw" secondAttribute="centerX" id="ExZ-ea-v8Z"/>
+                            <constraint firstItem="Rg5-8c-dqD" firstAttribute="centerY" secondItem="318-ta-juw" secondAttribute="centerY" id="NhH-lP-mFg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="anchorPoint" id="zBt-Sh-nr0">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="Vom-tl-FD7">
+                            <connections>
+                                <segue destination="qki-DT-NGR" kind="push" id="hWy-7q-kAM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="clockFaceImageView" destination="Rg5-8c-dqD" id="Q55-mx-R12"/>
+                        <outlet property="hourHandImageView" destination="0dl-Of-taE" id="jbJ-zu-dWw"/>
+                        <outlet property="minuteHandImageView" destination="vU2-J9-xyK" id="sfQ-rD-TMM"/>
+                        <outlet property="secondHandImageView" destination="0uu-Ir-WTn" id="SMn-b6-rNr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oq7-F8-YPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13" y="336"/>
+        </scene>
+        <!--坐标系转换-->
+        <scene sceneID="vki-o4-Kaf">
+            <objects>
+                <viewController id="qki-DT-NGR" customClass="PositionViewController" customModule="_3_LayerGeometry" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dJA-wM-8Xx"/>
+                        <viewControllerLayoutGuide type="bottom" id="3pX-bj-4MA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FdW-k6-mnq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a2j-t3-vqo">
+                                <rect key="frame" x="20" y="88" width="240" height="371"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.55294117649999996" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="44i-ig-jOr">
+                                <rect key="frame" x="60" y="160" width="251" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rLH-tN-yLK">
+                                        <rect key="frame" x="63" y="8" width="172" height="108"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1176470588" green="0.78823529410000004" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wzm-fN-N3k">
+                                <rect key="frame" x="88" y="228" width="144" height="320"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.83349278630000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="坐标系转换" id="ZRP-gz-rZU"/>
+                    <connections>
+                        <outlet property="greenView" destination="44i-ig-jOr" id="8YD-NS-zls"/>
+                        <outlet property="orangeView" destination="a2j-t3-vqo" id="R5E-LQ-0FN"/>
+                        <outlet property="whiteView" destination="rLH-tN-yLK" id="K6N-N9-wau"/>
+                        <outlet property="yellowView" destination="wzm-fN-N3k" id="nES-E7-XL0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XRl-Mq-WRf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="372" y="336"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ClockFace" width="256" height="256"/>
+        <image name="HourHand" width="30" height="94"/>
+        <image name="MinuteHand" width="20" height="106"/>
+        <image name="SecondHand" width="8" height="102"/>
+    </resources>
+</document>
