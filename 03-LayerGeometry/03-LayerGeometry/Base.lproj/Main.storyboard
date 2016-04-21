@@ -33,7 +33,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ClockFace" translatesAutoresizingMaskIntoConstraints="NO" id="Rg5-8c-dqD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ClockFace" translatesAutoresizingMaskIntoConstraints="NO" id="Rg5-8c-dqD">
                                 <rect key="frame" x="32" y="156" width="256" height="256"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HourHand" translatesAutoresizingMaskIntoConstraints="NO" id="0dl-Of-taE">
@@ -97,13 +97,19 @@
                                 <color key="backgroundColor" red="0.1176470588" green="0.78823529410000004" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wzm-fN-N3k">
-                                <rect key="frame" x="88" y="228" width="144" height="320"/>
+                                <rect key="frame" x="159" y="228" width="144" height="320"/>
                                 <color key="backgroundColor" red="0.94509803920000002" green="0.83349278630000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="坐标系转换" id="ZRP-gz-rZU"/>
+                    <navigationItem key="navigationItem" title="坐标系转换" id="ZRP-gz-rZU">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="bEu-WF-6BV">
+                            <connections>
+                                <segue destination="D3g-X4-WIK" kind="push" id="tia-rU-CHb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="greenView" destination="44i-ig-jOr" id="8YD-NS-zls"/>
                         <outlet property="orangeView" destination="a2j-t3-vqo" id="R5E-LQ-0FN"/>
@@ -113,7 +119,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XRl-Mq-WRf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="372" y="336"/>
+            <point key="canvasLocation" x="371" y="336"/>
+        </scene>
+        <!--HitTest-->
+        <scene sceneID="udY-ob-unl">
+            <objects>
+                <viewController id="D3g-X4-WIK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fNT-Xv-079"/>
+                        <viewControllerLayoutGuide type="bottom" id="xWl-P6-TkF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bfy-c7-V0Z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aeU-NF-kS9" customClass="HitView" customModule="_3_LayerGeometry" customModuleProvider="target">
+                                <rect key="frame" x="10" y="134" width="300" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yxM-Pf-t3I">
+                                        <rect key="frame" x="100" y="83" width="101" height="133"/>
+                                        <color key="backgroundColor" red="0.94509803920000002" green="0.55294117649999996" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="101" id="6Tx-2I-SGs"/>
+                                            <constraint firstAttribute="height" constant="133" id="ZVf-Vn-Dhp"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1176470588" green="0.78823529410000004" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="6TU-50-iCe"/>
+                                    <constraint firstItem="yxM-Pf-t3I" firstAttribute="centerY" secondItem="aeU-NF-kS9" secondAttribute="centerY" id="PPi-d5-ksY"/>
+                                    <constraint firstItem="yxM-Pf-t3I" firstAttribute="centerX" secondItem="aeU-NF-kS9" secondAttribute="centerX" id="ZDo-i0-o62"/>
+                                    <constraint firstAttribute="height" constant="300" id="hoo-EM-64J"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornorRadius">
+                                        <real key="value" value="150"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aeU-NF-kS9" firstAttribute="centerY" secondItem="Bfy-c7-V0Z" secondAttribute="centerY" id="21T-CZ-9fk"/>
+                            <constraint firstItem="aeU-NF-kS9" firstAttribute="centerX" secondItem="Bfy-c7-V0Z" secondAttribute="centerX" id="cVT-1e-7x2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="HitTest" id="gv5-G0-JPm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e0Y-ao-HVL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="758" y="336"/>
         </scene>
     </scenes>
     <resources>

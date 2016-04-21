@@ -16,6 +16,10 @@ class PositionViewController: UIViewController {
     @IBOutlet weak var whiteView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        // zPosition默认为0，大于0的话就会在前面，小于0的话会在后面，但是改变的只是看起来的效果，而不改变在父视图中的层级关系
+        self.orangeView.layer.zPosition = 1.0
+        self.yellowView.layer.zPosition = -1.0
+        print("zPosition --- \(self.yellowView.layer.zPosition)")
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {

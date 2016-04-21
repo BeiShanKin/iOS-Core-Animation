@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2820A7CB1CC8B7C000C2F047 /* PositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2820A7CA1CC8B7C000C2F047 /* PositionViewController.swift */; };
+		2820A7CE1CC8BF6300C2F047 /* HitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2820A7CD1CC8BF6300C2F047 /* HitView.swift */; };
 		285C12BE1CC794A900ADF45F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285C12BD1CC794A900ADF45F /* AppDelegate.swift */; };
 		285C12C31CC794A900ADF45F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285C12C11CC794A900ADF45F /* Main.storyboard */; };
 		285C12C51CC794A900ADF45F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285C12C41CC794A900ADF45F /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		2820A7CA1CC8B7C000C2F047 /* PositionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionViewController.swift; sourceTree = "<group>"; };
+		2820A7CD1CC8BF6300C2F047 /* HitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitView.swift; sourceTree = "<group>"; };
 		285C12BA1CC794A900ADF45F /* 03-LayerGeometry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03-LayerGeometry.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		285C12BD1CC794A900ADF45F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		285C12C21CC794A900ADF45F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,6 +86,14 @@
 			name = Position;
 			sourceTree = "<group>";
 		};
+		2820A7CC1CC8BF1200C2F047 /* Hit */ = {
+			isa = PBXGroup;
+			children = (
+				2820A7CD1CC8BF6300C2F047 /* HitView.swift */,
+			);
+			name = Hit;
+			sourceTree = "<group>";
+		};
 		285C12B11CC794A900ADF45F = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +117,7 @@
 		285C12BC1CC794A900ADF45F /* 03-LayerGeometry */ = {
 			isa = PBXGroup;
 			children = (
+				2820A7CC1CC8BF1200C2F047 /* Hit */,
 				2820A7C91CC8B7AC00C2F047 /* Position */,
 				285C12EB1CC7989A00ADF45F /* Anchor */,
 				285C12BD1CC794A900ADF45F /* AppDelegate.swift */,
@@ -278,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2820A7CE1CC8BF6300C2F047 /* HitView.swift in Sources */,
 				2820A7CB1CC8B7C000C2F047 /* PositionViewController.swift in Sources */,
 				285C12ED1CC798BC00ADF45F /* AnchorPointViewController.swift in Sources */,
 				285C12BE1CC794A900ADF45F /* AppDelegate.swift in Sources */,
