@@ -166,7 +166,7 @@
         <!--Filter-->
         <scene sceneID="h6l-D3-6VM">
             <objects>
-                <viewController id="5O0-y1-JHD" sceneMemberID="viewController">
+                <viewController id="5O0-y1-JHD" customClass="FilterViewController" customModule="_4_VisionLayer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EbE-N3-LOJ"/>
                         <viewControllerLayoutGuide type="bottom" id="W5n-M2-jVo"/>
@@ -174,9 +174,61 @@
                     <view key="view" contentMode="scaleToFill" id="YxE-ZT-CN9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Digits" translatesAutoresizingMaskIntoConstraints="NO" id="GnS-q8-lmi">
+                                <rect key="frame" x="8" y="249" width="40" height="70"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Digits" translatesAutoresizingMaskIntoConstraints="NO" id="tz5-5r-kjM">
+                                <rect key="frame" x="56" y="249" width="40" height="70"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Digits" translatesAutoresizingMaskIntoConstraints="NO" id="lAc-6O-yBE">
+                                <rect key="frame" x="116" y="249" width="40" height="70"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Digits" translatesAutoresizingMaskIntoConstraints="NO" id="JMa-HZ-q0x">
+                                <rect key="frame" x="164" y="249" width="40" height="70"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Digits" translatesAutoresizingMaskIntoConstraints="NO" id="764-9O-s5M">
+                                <rect key="frame" x="225" y="249" width="40" height="70"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Digits" translatesAutoresizingMaskIntoConstraints="NO" id="k2A-ez-8wA">
+                                <rect key="frame" x="273" y="249" width="40" height="70"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2s-up-TPs">
+                                <rect key="frame" x="99" y="249" width="16" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EtD-lE-PI2">
+                                <rect key="frame" x="207" y="249" width="16" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Snowman" translatesAutoresizingMaskIntoConstraints="NO" id="KRH-of-yfx">
+                                <rect key="frame" x="8" y="84" width="32" height="42"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Snowman" translatesAutoresizingMaskIntoConstraints="NO" id="rQ3-uh-6dt">
+                                <rect key="frame" x="99" y="84" width="32" height="42"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Snowman" translatesAutoresizingMaskIntoConstraints="NO" id="5NI-jv-ZT7">
+                                <rect key="frame" x="207" y="84" width="32" height="42"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Filter" id="au4-zU-KAg"/>
+                    <connections>
+                        <outlet property="liner" destination="rQ3-uh-6dt" id="Ona-tb-dKQ"/>
+                        <outlet property="near" destination="5NI-jv-ZT7" id="NBG-KY-h7L"/>
+                        <outlet property="triliner" destination="KRH-of-yfx" id="6Fa-Pd-LqI"/>
+                        <outletCollection property="digits" destination="GnS-q8-lmi" collectionClass="NSMutableArray" id="GpH-uY-I3t"/>
+                        <outletCollection property="digits" destination="tz5-5r-kjM" collectionClass="NSMutableArray" id="LMP-sV-geD"/>
+                        <outletCollection property="digits" destination="lAc-6O-yBE" collectionClass="NSMutableArray" id="iV9-w4-ziF"/>
+                        <outletCollection property="digits" destination="JMa-HZ-q0x" collectionClass="NSMutableArray" id="JpT-nt-KI6"/>
+                        <outletCollection property="digits" destination="764-9O-s5M" collectionClass="NSMutableArray" id="Cga-9c-PWp"/>
+                        <outletCollection property="digits" destination="k2A-ez-8wA" collectionClass="NSMutableArray" id="1c0-ra-lZN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gWK-2v-4Xb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -185,6 +237,7 @@
     </scenes>
     <resources>
         <image name="Cone" width="256" height="256"/>
+        <image name="Digits" width="50" height="7"/>
         <image name="Igloo" width="256" height="256"/>
         <image name="Snowman" width="200" height="280"/>
     </resources>
