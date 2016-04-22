@@ -60,7 +60,13 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="CornerRadius" id="uoG-JS-izT"/>
+                    <navigationItem key="navigationItem" title="CornerRadius" id="uoG-JS-izT">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="45a-Ad-Kbi">
+                            <connections>
+                                <segue destination="ft6-Dr-la5" kind="push" id="dhB-MF-guU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="view1" destination="RQC-Jp-d1Q" id="zUc-jY-952"/>
                         <outlet property="view2" destination="UU9-tJ-6UM" id="cnn-kT-MO7"/>
@@ -71,5 +77,115 @@
             </objects>
             <point key="canvasLocation" x="332" y="277"/>
         </scene>
+        <!--Shadow-->
+        <scene sceneID="lva-ZJ-Hf9">
+            <objects>
+                <viewController id="ft6-Dr-la5" customClass="ShadowViewController" customModule="_4_VisionLayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7N2-Uq-N6S"/>
+                        <viewControllerLayoutGuide type="bottom" id="iYM-s8-yUc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GTo-A7-nhr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Snowman" translatesAutoresizingMaskIntoConstraints="NO" id="jN5-ch-3PK">
+                                <rect key="frame" x="60" y="144" width="200" height="280"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jN5-ch-3PK" firstAttribute="centerY" secondItem="GTo-A7-nhr" secondAttribute="centerY" id="3bx-yU-2dj"/>
+                            <constraint firstItem="jN5-ch-3PK" firstAttribute="centerX" secondItem="GTo-A7-nhr" secondAttribute="centerX" id="zyr-Hg-ydR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Shadow" id="lnJ-lj-OfA">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="QuV-iS-qHg">
+                            <connections>
+                                <segue destination="wLm-G7-NPZ" kind="push" id="IaL-Rf-5WO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="snowImageView" destination="jN5-ch-3PK" id="0Z9-An-Odz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UHL-rv-c9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714" y="277"/>
+        </scene>
+        <!--Mask-->
+        <scene sceneID="CB4-6W-eLR">
+            <objects>
+                <viewController id="wLm-G7-NPZ" customClass="MaskViewController" customModule="_4_VisionLayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CA4-8u-opt"/>
+                        <viewControllerLayoutGuide type="bottom" id="HUt-nK-R7I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2vH-ZO-m2F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cone" translatesAutoresizingMaskIntoConstraints="NO" id="lXv-K9-pMk">
+                                <rect key="frame" x="20" y="72" width="129" height="128"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.83349278630000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Igloo" translatesAutoresizingMaskIntoConstraints="NO" id="HQt-Fx-JYg">
+                                <rect key="frame" x="171" y="420" width="129" height="128"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.55294117649999996" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cone" translatesAutoresizingMaskIntoConstraints="NO" id="5I7-GH-42H">
+                                <rect key="frame" x="171" y="72" width="129" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Igloo" translatesAutoresizingMaskIntoConstraints="NO" id="ehq-RA-Hxb">
+                                <rect key="frame" x="20" y="420" width="129" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Snowman" translatesAutoresizingMaskIntoConstraints="NO" id="6YV-u6-Gkt">
+                                <rect key="frame" x="60" y="163" width="200" height="280"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mask" id="kQV-aK-Ep4">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="lDw-N5-WI6">
+                            <connections>
+                                <segue destination="5O0-y1-JHD" kind="push" id="JBr-wk-2hv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="coneImageView" destination="lXv-K9-pMk" id="HN7-pD-crR"/>
+                        <outlet property="lglooImageView" destination="HQt-Fx-JYg" id="ZsD-el-kk5"/>
+                        <outlet property="snowImageView" destination="6YV-u6-Gkt" id="UWZ-MC-lOc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sYf-7L-wlY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077" y="277"/>
+        </scene>
+        <!--Filter-->
+        <scene sceneID="h6l-D3-6VM">
+            <objects>
+                <viewController id="5O0-y1-JHD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EbE-N3-LOJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="W5n-M2-jVo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YxE-ZT-CN9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Filter" id="au4-zU-KAg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gWK-2v-4Xb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1456" y="277"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Cone" width="256" height="256"/>
+        <image name="Igloo" width="256" height="256"/>
+        <image name="Snowman" width="200" height="280"/>
+    </resources>
 </document>
