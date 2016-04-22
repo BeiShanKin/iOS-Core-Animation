@@ -217,7 +217,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Filter" id="au4-zU-KAg"/>
+                    <navigationItem key="navigationItem" title="Filter" id="au4-zU-KAg">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="PiX-t7-X0B">
+                            <connections>
+                                <segue destination="O2R-0B-n0O" kind="push" id="dP9-RN-p5M"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="liner" destination="rQ3-uh-6dt" id="Ona-tb-dKQ"/>
                         <outlet property="near" destination="5NI-jv-ZT7" id="NBG-KY-h7L"/>
@@ -233,6 +239,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gWK-2v-4Xb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1456" y="277"/>
+        </scene>
+        <!--Opacity-->
+        <scene sceneID="04E-4z-1gH">
+            <objects>
+                <viewController id="O2R-0B-n0O" customClass="OpacityViewController" customModule="_4_VisionLayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zDR-AY-KK9"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tg3-co-1S8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Euf-95-Fha">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5b6-yd-cQb">
+                                <rect key="frame" x="20" y="287" width="106" height="56"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Day-3K-lEs">
+                                        <rect key="frame" x="16" y="13" width="74" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e7c-Uy-CE3">
+                                <rect key="frame" x="194" y="287" width="106" height="56"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIO-UZ-m15">
+                                        <rect key="frame" x="16" y="13" width="74" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Opacity" id="hmO-Y3-JEj"/>
+                    <connections>
+                        <outlet property="labelLeft" destination="Day-3K-lEs" id="vFP-8k-ain"/>
+                        <outlet property="labelRight" destination="GIO-UZ-m15" id="Kfd-kf-Fxn"/>
+                        <outlet property="viewLeft" destination="5b6-yd-cQb" id="YD7-g0-alw"/>
+                        <outlet property="viewRight" destination="e7c-Uy-CE3" id="09X-f1-8Ke"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rEq-LY-9RG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1808" y="277"/>
         </scene>
     </scenes>
     <resources>
