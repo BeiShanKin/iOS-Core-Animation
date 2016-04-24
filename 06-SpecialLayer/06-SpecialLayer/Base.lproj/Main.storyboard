@@ -34,11 +34,61 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="CAShapeLayer" id="4Yu-CA-vNk"/>
+                    <navigationItem key="navigationItem" title="CAShapeLayer" id="4Yu-CA-vNk">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="Fpo-H9-ljN">
+                            <connections>
+                                <segue destination="Wld-nD-3Ot" kind="push" id="ghB-h8-kZA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ty7-vp-Ab5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="88" y="378"/>
+        </scene>
+        <!--CATextLayer-->
+        <scene sceneID="i1t-HB-8Dh">
+            <objects>
+                <viewController id="Wld-nD-3Ot" customClass="TextViewController" customModule="_6_SpecialLayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="puS-Qx-5TH"/>
+                        <viewControllerLayoutGuide type="bottom" id="LjR-aV-8bN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yG9-zB-MsQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CATextLayer" id="X5U-9k-Bfs">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="jjV-la-bED">
+                            <connections>
+                                <segue destination="tUj-5Q-Q2D" kind="push" id="Y8e-7J-gFC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MgV-Ab-cVm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="466" y="378"/>
+        </scene>
+        <!--CATransformLayer-->
+        <scene sceneID="BhS-3m-cBg">
+            <objects>
+                <viewController id="tUj-5Q-Q2D" customClass="TransformViewController" customModule="_6_SpecialLayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="52m-bv-leW"/>
+                        <viewControllerLayoutGuide type="bottom" id="CRk-eo-yC8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FXI-EL-kB4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CATransformLayer" id="MrS-YN-ciR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tA3-QH-ng6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847" y="378"/>
         </scene>
     </scenes>
 </document>

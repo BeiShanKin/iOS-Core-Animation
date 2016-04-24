@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28CF18851CCC794A00B65967 /* Configu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF18841CCC794A00B65967 /* Configu.swift */; };
+		28DB5F141CCB19C2003E30FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DB5F131CCB19C2003E30FA /* AppDelegate.swift */; };
+		28DB5F191CCB19C3003E30FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DB5F171CCB19C3003E30FA /* Main.storyboard */; };
+		28DB5F1B1CCB19C3003E30FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28DB5F1A1CCB19C3003E30FA /* Assets.xcassets */; };
+		28DB5F1E1CCB19C3003E30FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DB5F1C1CCB19C3003E30FA /* LaunchScreen.storyboard */; };
+		28DB5F291CCB19C3003E30FA /* _5_LayerTransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DB5F281CCB19C3003E30FA /* _5_LayerTransformTests.swift */; };
+		28DB5F341CCB19C3003E30FA /* _5_LayerTransformUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DB5F331CCB19C3003E30FA /* _5_LayerTransformUITests.swift */; };
+		28DB5F451CCB1A91003E30FA /* Transform2DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DB5F441CCB1A91003E30FA /* Transform2DViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28DB5F251CCB19C3003E30FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28DB5F081CCB19C2003E30FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28DB5F0F1CCB19C2003E30FA;
+			remoteInfo = "05-LayerTransform";
+		};
+		28DB5F301CCB19C3003E30FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28DB5F081CCB19C2003E30FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28DB5F0F1CCB19C2003E30FA;
+			remoteInfo = "05-LayerTransform";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28CF18841CCC794A00B65967 /* Configu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configu.swift; sourceTree = "<group>"; };
+		28DB5F101CCB19C2003E30FA /* 05-LayerTransform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "05-LayerTransform.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28DB5F131CCB19C2003E30FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28DB5F181CCB19C3003E30FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28DB5F1A1CCB19C3003E30FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28DB5F1D1CCB19C3003E30FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28DB5F1F1CCB19C3003E30FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28DB5F241CCB19C3003E30FA /* 05-LayerTransformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "05-LayerTransformTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28DB5F281CCB19C3003E30FA /* _5_LayerTransformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _5_LayerTransformTests.swift; sourceTree = "<group>"; };
+		28DB5F2A1CCB19C3003E30FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28DB5F2F1CCB19C3003E30FA /* 05-LayerTransformUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "05-LayerTransformUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28DB5F331CCB19C3003E30FA /* _5_LayerTransformUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _5_LayerTransformUITests.swift; sourceTree = "<group>"; };
+		28DB5F351CCB19C3003E30FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28DB5F441CCB1A91003E30FA /* Transform2DViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transform2DViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28DB5F0D1CCB19C2003E30FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DB5F211CCB19C3003E30FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DB5F2C1CCB19C3003E30FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28DB5F071CCB19C2003E30FA = {
+			isa = PBXGroup;
+			children = (
+				28DB5F121CCB19C2003E30FA /* 05-LayerTransform */,
+				28DB5F271CCB19C3003E30FA /* 05-LayerTransformTests */,
+				28DB5F321CCB19C3003E30FA /* 05-LayerTransformUITests */,
+				28DB5F111CCB19C2003E30FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28DB5F111CCB19C2003E30FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28DB5F101CCB19C2003E30FA /* 05-LayerTransform.app */,
+				28DB5F241CCB19C3003E30FA /* 05-LayerTransformTests.xctest */,
+				28DB5F2F1CCB19C3003E30FA /* 05-LayerTransformUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28DB5F121CCB19C2003E30FA /* 05-LayerTransform */ = {
+			isa = PBXGroup;
+			children = (
+				28DB5F411CCB19F1003E30FA /* 2D */,
+				28DB5F131CCB19C2003E30FA /* AppDelegate.swift */,
+				28DB5F171CCB19C3003E30FA /* Main.storyboard */,
+				28DB5F1A1CCB19C3003E30FA /* Assets.xcassets */,
+				28DB5F1C1CCB19C3003E30FA /* LaunchScreen.storyboard */,
+				28DB5F1F1CCB19C3003E30FA /* Info.plist */,
+				28CF18841CCC794A00B65967 /* Configu.swift */,
+			);
+			path = "05-LayerTransform";
+			sourceTree = "<group>";
+		};
+		28DB5F271CCB19C3003E30FA /* 05-LayerTransformTests */ = {
+			isa = PBXGroup;
+			children = (
+				28DB5F281CCB19C3003E30FA /* _5_LayerTransformTests.swift */,
+				28DB5F2A1CCB19C3003E30FA /* Info.plist */,
+			);
+			path = "05-LayerTransformTests";
+			sourceTree = "<group>";
+		};
+		28DB5F321CCB19C3003E30FA /* 05-LayerTransformUITests */ = {
+			isa = PBXGroup;
+			children = (
+				28DB5F331CCB19C3003E30FA /* _5_LayerTransformUITests.swift */,
+				28DB5F351CCB19C3003E30FA /* Info.plist */,
+			);
+			path = "05-LayerTransformUITests";
+			sourceTree = "<group>";
+		};
+		28DB5F411CCB19F1003E30FA /* 2D */ = {
+			isa = PBXGroup;
+			children = (
+				28DB5F441CCB1A91003E30FA /* Transform2DViewController.swift */,
+			);
+			name = 2D;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28DB5F0F1CCB19C2003E30FA /* 05-LayerTransform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28DB5F381CCB19C3003E30FA /* Build configuration list for PBXNativeTarget "05-LayerTransform" */;
+			buildPhases = (
+				28DB5F0C1CCB19C2003E30FA /* Sources */,
+				28DB5F0D1CCB19C2003E30FA /* Frameworks */,
+				28DB5F0E1CCB19C2003E30FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "05-LayerTransform";
+			productName = "05-LayerTransform";
+			productReference = 28DB5F101CCB19C2003E30FA /* 05-LayerTransform.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28DB5F231CCB19C3003E30FA /* 05-LayerTransformTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28DB5F3B1CCB19C3003E30FA /* Build configuration list for PBXNativeTarget "05-LayerTransformTests" */;
+			buildPhases = (
+				28DB5F201CCB19C3003E30FA /* Sources */,
+				28DB5F211CCB19C3003E30FA /* Frameworks */,
+				28DB5F221CCB19C3003E30FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28DB5F261CCB19C3003E30FA /* PBXTargetDependency */,
+			);
+			name = "05-LayerTransformTests";
+			productName = "05-LayerTransformTests";
+			productReference = 28DB5F241CCB19C3003E30FA /* 05-LayerTransformTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28DB5F2E1CCB19C3003E30FA /* 05-LayerTransformUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28DB5F3E1CCB19C3003E30FA /* Build configuration list for PBXNativeTarget "05-LayerTransformUITests" */;
+			buildPhases = (
+				28DB5F2B1CCB19C3003E30FA /* Sources */,
+				28DB5F2C1CCB19C3003E30FA /* Frameworks */,
+				28DB5F2D1CCB19C3003E30FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28DB5F311CCB19C3003E30FA /* PBXTargetDependency */,
+			);
+			name = "05-LayerTransformUITests";
+			productName = "05-LayerTransformUITests";
+			productReference = 28DB5F2F1CCB19C3003E30FA /* 05-LayerTransformUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28DB5F081CCB19C2003E30FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = SY;
+				TargetAttributes = {
+					28DB5F0F1CCB19C2003E30FA = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = LKKDW9D7LB;
+					};
+					28DB5F231CCB19C3003E30FA = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = LKKDW9D7LB;
+						TestTargetID = 28DB5F0F1CCB19C2003E30FA;
+					};
+					28DB5F2E1CCB19C3003E30FA = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = LKKDW9D7LB;
+						TestTargetID = 28DB5F0F1CCB19C2003E30FA;
+					};
+				};
+			};
+			buildConfigurationList = 28DB5F0B1CCB19C2003E30FA /* Build configuration list for PBXProject "05-LayerTransform" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28DB5F071CCB19C2003E30FA;
+			productRefGroup = 28DB5F111CCB19C2003E30FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28DB5F0F1CCB19C2003E30FA /* 05-LayerTransform */,
+				28DB5F231CCB19C3003E30FA /* 05-LayerTransformTests */,
+				28DB5F2E1CCB19C3003E30FA /* 05-LayerTransformUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28DB5F0E1CCB19C2003E30FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DB5F1E1CCB19C3003E30FA /* LaunchScreen.storyboard in Resources */,
+				28DB5F1B1CCB19C3003E30FA /* Assets.xcassets in Resources */,
+				28DB5F191CCB19C3003E30FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DB5F221CCB19C3003E30FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DB5F2D1CCB19C3003E30FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28DB5F0C1CCB19C2003E30FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DB5F141CCB19C2003E30FA /* AppDelegate.swift in Sources */,
+				28DB5F451CCB1A91003E30FA /* Transform2DViewController.swift in Sources */,
+				28CF18851CCC794A00B65967 /* Configu.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DB5F201CCB19C3003E30FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DB5F291CCB19C3003E30FA /* _5_LayerTransformTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DB5F2B1CCB19C3003E30FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DB5F341CCB19C3003E30FA /* _5_LayerTransformUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28DB5F261CCB19C3003E30FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28DB5F0F1CCB19C2003E30FA /* 05-LayerTransform */;
+			targetProxy = 28DB5F251CCB19C3003E30FA /* PBXContainerItemProxy */;
+		};
+		28DB5F311CCB19C3003E30FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28DB5F0F1CCB19C2003E30FA /* 05-LayerTransform */;
+			targetProxy = 28DB5F301CCB19C3003E30FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28DB5F171CCB19C3003E30FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28DB5F181CCB19C3003E30FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28DB5F1C1CCB19C3003E30FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28DB5F1D1CCB19C3003E30FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28DB5F361CCB19C3003E30FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28DB5F371CCB19C3003E30FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28DB5F391CCB19C3003E30FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "05-LayerTransform/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bravesoft.-5-LayerTransform";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		28DB5F3A1CCB19C3003E30FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "05-LayerTransform/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bravesoft.-5-LayerTransform";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		28DB5F3C1CCB19C3003E30FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "05-LayerTransformTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bravesoft.-5-LayerTransformTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/05-LayerTransform.app/05-LayerTransform";
+			};
+			name = Debug;
+		};
+		28DB5F3D1CCB19C3003E30FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "05-LayerTransformTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bravesoft.-5-LayerTransformTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/05-LayerTransform.app/05-LayerTransform";
+			};
+			name = Release;
+		};
+		28DB5F3F1CCB19C3003E30FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "05-LayerTransformUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bravesoft.-5-LayerTransformUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "05-LayerTransform";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		28DB5F401CCB19C3003E30FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "05-LayerTransformUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bravesoft.-5-LayerTransformUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "05-LayerTransform";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28DB5F0B1CCB19C2003E30FA /* Build configuration list for PBXProject "05-LayerTransform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DB5F361CCB19C3003E30FA /* Debug */,
+				28DB5F371CCB19C3003E30FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28DB5F381CCB19C3003E30FA /* Build configuration list for PBXNativeTarget "05-LayerTransform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DB5F391CCB19C3003E30FA /* Debug */,
+				28DB5F3A1CCB19C3003E30FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28DB5F3B1CCB19C3003E30FA /* Build configuration list for PBXNativeTarget "05-LayerTransformTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DB5F3C1CCB19C3003E30FA /* Debug */,
+				28DB5F3D1CCB19C3003E30FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28DB5F3E1CCB19C3003E30FA /* Build configuration list for PBXNativeTarget "05-LayerTransformUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DB5F3F1CCB19C3003E30FA /* Debug */,
+				28DB5F401CCB19C3003E30FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28DB5F081CCB19C2003E30FA /* Project object */;
+}

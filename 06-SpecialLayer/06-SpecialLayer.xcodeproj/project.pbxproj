@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		281DFA591CCA2CEE0072C31D /* TextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281DFA581CCA2CEE0072C31D /* TextLabel.swift */; };
 		284D0DD81CCA060C009D5029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284D0DD71CCA060C009D5029 /* AppDelegate.swift */; };
 		284D0DDD1CCA060C009D5029 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284D0DDB1CCA060C009D5029 /* Main.storyboard */; };
 		284D0DDF1CCA060C009D5029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284D0DDE1CCA060C009D5029 /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 		284D0DED1CCA060C009D5029 /* _6_SpecialLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284D0DEC1CCA060C009D5029 /* _6_SpecialLayerTests.swift */; };
 		284D0DF81CCA060C009D5029 /* _6_SpecialLayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284D0DF71CCA060C009D5029 /* _6_SpecialLayerUITests.swift */; };
 		284D0E071CCA0744009D5029 /* ShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284D0E061CCA0744009D5029 /* ShapeViewController.swift */; };
+		284D0E0A1CCA1244009D5029 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284D0E091CCA1244009D5029 /* TextViewController.swift */; };
+		28DB5F061CCB1621003E30FA /* TransformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DB5F051CCB1621003E30FA /* TransformViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		281DFA581CCA2CEE0072C31D /* TextLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextLabel.swift; sourceTree = "<group>"; };
 		284D0DD41CCA060C009D5029 /* 06-SpecialLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "06-SpecialLayer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		284D0DD71CCA060C009D5029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		284D0DDC1CCA060C009D5029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		284D0DF71CCA060C009D5029 /* _6_SpecialLayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _6_SpecialLayerUITests.swift; sourceTree = "<group>"; };
 		284D0DF91CCA060C009D5029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		284D0E061CCA0744009D5029 /* ShapeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeViewController.swift; sourceTree = "<group>"; };
+		284D0E091CCA1244009D5029 /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		28DB5F051CCB1621003E30FA /* TransformViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,8 @@
 		284D0DD61CCA060C009D5029 /* 06-SpecialLayer */ = {
 			isa = PBXGroup;
 			children = (
+				28DB5F041CCB1603003E30FA /* Transform */,
+				284D0E081CCA1221009D5029 /* Text */,
 				284D0E051CCA0735009D5029 /* Shape */,
 				284D0DD71CCA060C009D5029 /* AppDelegate.swift */,
 				284D0DDB1CCA060C009D5029 /* Main.storyboard */,
@@ -131,6 +139,23 @@
 				284D0E061CCA0744009D5029 /* ShapeViewController.swift */,
 			);
 			name = Shape;
+			sourceTree = "<group>";
+		};
+		284D0E081CCA1221009D5029 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				284D0E091CCA1244009D5029 /* TextViewController.swift */,
+				281DFA581CCA2CEE0072C31D /* TextLabel.swift */,
+			);
+			name = Text;
+			sourceTree = "<group>";
+		};
+		28DB5F041CCB1603003E30FA /* Transform */ = {
+			isa = PBXGroup;
+			children = (
+				28DB5F051CCB1621003E30FA /* TransformViewController.swift */,
+			);
+			name = Transform;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,8 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28DB5F061CCB1621003E30FA /* TransformViewController.swift in Sources */,
 				284D0E071CCA0744009D5029 /* ShapeViewController.swift in Sources */,
 				284D0DD81CCA060C009D5029 /* AppDelegate.swift in Sources */,
+				284D0E0A1CCA1244009D5029 /* TextViewController.swift in Sources */,
+				281DFA591CCA2CEE0072C31D /* TextLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +521,7 @@
 				284D0DFE1CCA060C009D5029 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		284D0DFF1CCA060C009D5029 /* Build configuration list for PBXNativeTarget "06-SpecialLayerTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +530,7 @@
 				284D0E011CCA060C009D5029 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		284D0E021CCA060C009D5029 /* Build configuration list for PBXNativeTarget "06-SpecialLayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +539,7 @@
 				284D0E041CCA060C009D5029 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

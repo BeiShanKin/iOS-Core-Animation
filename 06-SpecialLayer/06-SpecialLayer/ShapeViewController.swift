@@ -12,6 +12,7 @@ class ShapeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        drawBezier()
     }
     
     func drawBezier() {
