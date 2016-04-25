@@ -96,10 +96,29 @@
             </objects>
             <point key="canvasLocation" x="847" y="378"/>
         </scene>
+        <!--CAReplicatorLayer-->
+        <scene sceneID="4Ac-sz-jNo">
+            <objects>
+                <viewController id="IzQ-10-gcQ" customClass="ReplicatorViewController" customModule="_6_SpecialLayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cxW-6q-BUe"/>
+                        <viewControllerLayoutGuide type="bottom" id="q1R-8w-WsW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Kb-v4-a3w">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CAReplicatorLayer" id="tvI-wP-iKQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XUs-aw-dRk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1581" y="378"/>
+        </scene>
         <!--CAGradientLayer-->
         <scene sceneID="lZo-Wd-6JM">
             <objects>
-                <viewController id="zxk-Xc-Rs2" sceneMemberID="viewController">
+                <viewController id="zxk-Xc-Rs2" customClass="GradientViewController" customModule="_6_SpecialLayer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NDr-ni-eG1"/>
                         <viewControllerLayoutGuide type="bottom" id="uRZ-p1-mJh"/>
@@ -107,13 +126,36 @@
                     <view key="view" contentMode="scaleToFill" id="rqP-Wf-aN4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5e-LT-HXt">
+                                <rect key="frame" x="20" y="84" width="150" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="V1M-EJ-P4c"/>
+                                    <constraint firstAttribute="height" constant="150" id="oG4-mQ-YSf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w5e-LT-HXt" firstAttribute="leading" secondItem="rqP-Wf-aN4" secondAttribute="leading" constant="20" id="AgM-d9-gMI"/>
+                            <constraint firstItem="w5e-LT-HXt" firstAttribute="top" secondItem="NDr-ni-eG1" secondAttribute="bottom" constant="20" id="qLV-7v-6l5"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="CAGradientLayer" id="zYu-tV-5Zz"/>
+                    <navigationItem key="navigationItem" title="CAGradientLayer" id="zYu-tV-5Zz">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="xGB-p8-R22">
+                            <connections>
+                                <segue destination="IzQ-10-gcQ" kind="push" id="vQX-kf-0aO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="containerView" destination="w5e-LT-HXt" id="Bxj-2N-4N0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hn7-OV-H9w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194" y="383"/>
+            <point key="canvasLocation" x="1214" y="378"/>
         </scene>
     </scenes>
 </document>
