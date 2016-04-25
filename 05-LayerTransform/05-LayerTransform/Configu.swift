@@ -9,5 +9,5 @@
 import Foundation
 
 func radiansToDegrees(radians: Double) -> Double {
-    return radians / M_PI * 180
+    return radians / 180 * M_PI
 }

@@ -72,7 +72,7 @@
         <!--3D-->
         <scene sceneID="af9-fs-Hat">
             <objects>
-                <viewController id="heE-RE-QM4" sceneMemberID="viewController">
+                <viewController id="heE-RE-QM4" customClass="Transform3DViewController" customModule="_5_LayerTransform" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nsA-Cz-jGT"/>
                         <viewControllerLayoutGuide type="bottom" id="EKa-UJ-bcr"/>
@@ -80,7 +80,72 @@
                     <view key="view" contentMode="scaleToFill" id="mWU-zI-5qz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpr-Qn-oPo">
+                                <rect key="frame" x="110" y="234" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.78823529410000004" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="ButtonLeft">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnClick:" destination="heE-RE-QM4" eventType="touchUpInside" id="Ir6-h7-96a"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I4h-V7-hJc">
+                                <rect key="frame" x="40" y="396" width="240" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQt-Zb-6SY">
+                                        <rect key="frame" x="151" y="40" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.78823529410000004" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Right">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnClick:" destination="heE-RE-QM4" eventType="touchUpInside" id="01M-6w-JhG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrb-81-1vD">
+                                        <rect key="frame" x="43" y="39" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.78823529410000004" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Left">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.55294117649999996" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="KzT-Qd-bGy"/>
+                                    <constraint firstAttribute="width" constant="240" id="rh6-C4-aKX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRh-4t-K5i">
+                                <rect key="frame" x="85" y="76" width="150" height="150"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BFt-xo-ISL">
+                                        <rect key="frame" x="35" y="35" width="80" height="80"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="14N-pZ-Wlt"/>
+                                            <constraint firstAttribute="height" constant="80" id="NnI-BR-PzA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="BFt-xo-ISL" firstAttribute="centerX" secondItem="bRh-4t-K5i" secondAttribute="centerX" id="Vj9-pM-Rjp"/>
+                                    <constraint firstItem="BFt-xo-ISL" firstAttribute="centerY" secondItem="bRh-4t-K5i" secondAttribute="centerY" id="Yk3-eb-3OW"/>
+                                    <constraint firstAttribute="width" constant="150" id="lnQ-H9-bdj"/>
+                                    <constraint firstAttribute="height" constant="150" id="nQ0-9N-0nT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bRh-4t-K5i" firstAttribute="centerX" secondItem="mWU-zI-5qz" secondAttribute="centerX" id="07b-fj-Q50"/>
+                            <constraint firstItem="I4h-V7-hJc" firstAttribute="centerX" secondItem="mWU-zI-5qz" secondAttribute="centerX" id="6zc-zX-Hut"/>
+                            <constraint firstItem="I4h-V7-hJc" firstAttribute="centerY" secondItem="mWU-zI-5qz" secondAttribute="centerY" constant="176" id="7CF-3T-FRa"/>
+                            <constraint firstItem="bRh-4t-K5i" firstAttribute="centerY" secondItem="mWU-zI-5qz" secondAttribute="centerY" constant="-133" id="e1c-TA-lIy"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="3D" id="kdo-IW-S4f">
                         <barButtonItem key="rightBarButtonItem" title="next" id="fv9-C1-AVx">
@@ -89,6 +154,14 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="btn" destination="wpr-Qn-oPo" id="rIO-7v-bOa"/>
+                        <outlet property="btnLeft" destination="mrb-81-1vD" id="4lO-RX-JBo"/>
+                        <outlet property="btnRight" destination="FQt-Zb-6SY" id="c5A-Kk-eqe"/>
+                        <outlet property="containerView" destination="I4h-V7-hJc" id="4Ui-zU-uyo"/>
+                        <outlet property="grayView" destination="bRh-4t-K5i" id="yM9-w5-9id"/>
+                        <outlet property="whiteView" destination="BFt-xo-ISL" id="6Fh-XA-wiG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gAM-C4-1jJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -97,7 +170,7 @@
         <!--Cube-->
         <scene sceneID="0eO-XZ-2Ea">
             <objects>
-                <viewController id="iIy-ph-OGe" sceneMemberID="viewController">
+                <viewController id="iIy-ph-OGe" customClass="CubeViewController" customModule="_5_LayerTransform" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FEv-QX-6dk"/>
                         <viewControllerLayoutGuide type="bottom" id="LHe-Of-Ocp"/>
@@ -105,9 +178,26 @@
                     <view key="view" contentMode="scaleToFill" id="5xj-UF-FWg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yba-Wj-DnU">
+                                <rect key="frame" x="10" y="134" width="300" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="75l-eD-aMg"/>
+                                    <constraint firstAttribute="height" constant="300" id="HOn-we-ttG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yba-Wj-DnU" firstAttribute="centerY" secondItem="5xj-UF-FWg" secondAttribute="centerY" id="14N-Wr-qKa"/>
+                            <constraint firstItem="Yba-Wj-DnU" firstAttribute="centerX" secondItem="5xj-UF-FWg" secondAttribute="centerX" id="Iwk-ag-W52"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Cube" id="NA2-8e-rel"/>
+                    <connections>
+                        <outlet property="containerView" destination="Yba-Wj-DnU" id="Dbe-sN-CeY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ekG-mM-oUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

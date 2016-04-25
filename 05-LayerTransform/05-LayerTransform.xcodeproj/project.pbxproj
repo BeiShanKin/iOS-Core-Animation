@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		285851C01CCDBD48002999AB /* CubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285851BF1CCDBD48002999AB /* CubeViewController.swift */; };
+		285851C21CCDBD5F002999AB /* Cube.xib in Resources */ = {isa = PBXBuildFile; fileRef = 285851C11CCDBD5F002999AB /* Cube.xib */; };
 		28CF18851CCC794A00B65967 /* Configu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF18841CCC794A00B65967 /* Configu.swift */; };
+		28CF188A1CCCB69A00B65967 /* Transform3DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF18891CCCB69A00B65967 /* Transform3DViewController.swift */; };
 		28DB5F141CCB19C2003E30FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DB5F131CCB19C2003E30FA /* AppDelegate.swift */; };
 		28DB5F191CCB19C3003E30FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DB5F171CCB19C3003E30FA /* Main.storyboard */; };
 		28DB5F1B1CCB19C3003E30FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28DB5F1A1CCB19C3003E30FA /* Assets.xcassets */; };
@@ -35,7 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		285851BF1CCDBD48002999AB /* CubeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubeViewController.swift; sourceTree = "<group>"; };
+		285851C11CCDBD5F002999AB /* Cube.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cube.xib; sourceTree = "<group>"; };
 		28CF18841CCC794A00B65967 /* Configu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configu.swift; sourceTree = "<group>"; };
+		28CF18891CCCB69A00B65967 /* Transform3DViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transform3DViewController.swift; sourceTree = "<group>"; };
 		28DB5F101CCB19C2003E30FA /* 05-LayerTransform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "05-LayerTransform.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28DB5F131CCB19C2003E30FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28DB5F181CCB19C3003E30FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,6 +82,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		285851BE1CCDBD2D002999AB /* Cube */ = {
+			isa = PBXGroup;
+			children = (
+				285851BF1CCDBD48002999AB /* CubeViewController.swift */,
+				285851C11CCDBD5F002999AB /* Cube.xib */,
+			);
+			name = Cube;
+			sourceTree = "<group>";
+		};
+		28CF18861CCCB65D00B65967 /* 3D */ = {
+			isa = PBXGroup;
+			children = (
+				28CF18891CCCB69A00B65967 /* Transform3DViewController.swift */,
+			);
+			name = 3D;
+			sourceTree = "<group>";
+		};
 		28DB5F071CCB19C2003E30FA = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +122,8 @@
 		28DB5F121CCB19C2003E30FA /* 05-LayerTransform */ = {
 			isa = PBXGroup;
 			children = (
+				285851BE1CCDBD2D002999AB /* Cube */,
+				28CF18861CCCB65D00B65967 /* 3D */,
 				28DB5F411CCB19F1003E30FA /* 2D */,
 				28DB5F131CCB19C2003E30FA /* AppDelegate.swift */,
 				28DB5F171CCB19C3003E30FA /* Main.storyboard */,
@@ -243,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				285851C21CCDBD5F002999AB /* Cube.xib in Resources */,
 				28DB5F1E1CCB19C3003E30FA /* LaunchScreen.storyboard in Resources */,
 				28DB5F1B1CCB19C3003E30FA /* Assets.xcassets in Resources */,
 				28DB5F191CCB19C3003E30FA /* Main.storyboard in Resources */,
@@ -270,8 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28CF188A1CCCB69A00B65967 /* Transform3DViewController.swift in Sources */,
 				28DB5F141CCB19C2003E30FA /* AppDelegate.swift in Sources */,
 				28DB5F451CCB1A91003E30FA /* Transform2DViewController.swift in Sources */,
+				285851C01CCDBD48002999AB /* CubeViewController.swift in Sources */,
 				28CF18851CCC794A00B65967 /* Configu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
