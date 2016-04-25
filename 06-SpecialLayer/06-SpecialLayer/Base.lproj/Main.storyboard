@@ -84,11 +84,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="CATransformLayer" id="MrS-YN-ciR"/>
+                    <navigationItem key="navigationItem" title="CATransformLayer" id="MrS-YN-ciR">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="uqq-dc-5hx">
+                            <connections>
+                                <segue destination="zxk-Xc-Rs2" kind="push" id="keU-Yg-VtD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tA3-QH-ng6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="847" y="378"/>
+        </scene>
+        <!--CAGradientLayer-->
+        <scene sceneID="lZo-Wd-6JM">
+            <objects>
+                <viewController id="zxk-Xc-Rs2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NDr-ni-eG1"/>
+                        <viewControllerLayoutGuide type="bottom" id="uRZ-p1-mJh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rqP-Wf-aN4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CAGradientLayer" id="zYu-tV-5Zz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hn7-OV-H9w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1194" y="383"/>
         </scene>
     </scenes>
 </document>
