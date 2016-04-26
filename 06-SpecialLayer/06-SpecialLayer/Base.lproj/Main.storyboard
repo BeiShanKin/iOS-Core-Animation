@@ -109,11 +109,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="CAReplicatorLayer" id="tvI-wP-iKQ"/>
+                    <navigationItem key="navigationItem" title="CAReplicatorLayer" id="tvI-wP-iKQ">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="JGb-lV-KC2">
+                            <connections>
+                                <segue destination="dYy-EF-4qg" kind="push" id="HtG-Zq-fLS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XUs-aw-dRk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1581" y="378"/>
+        </scene>
+        <!--CAScrollLayer-->
+        <scene sceneID="xjl-Zk-Rfn">
+            <objects>
+                <viewController id="dYy-EF-4qg" customClass="ScorllLayerViewController" customModule="_6_SpecialLayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TUn-KH-oaO"/>
+                        <viewControllerLayoutGuide type="bottom" id="UuN-Jw-m7s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gtK-mL-d8g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CAScrollLayer" id="hMo-Yl-SPQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWy-IH-XEr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1950" y="378"/>
         </scene>
         <!--CAGradientLayer-->
         <scene sceneID="lZo-Wd-6JM">
