@@ -125,7 +125,7 @@
         <!--7.4-->
         <scene sceneID="pO2-Ka-7ic">
             <objects>
-                <viewController id="t6c-QK-jKa" sceneMemberID="viewController">
+                <viewController id="t6c-QK-jKa" customClass="ShowTreeViewController" customModule="_7_ImplicitAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5x8-5T-45S"/>
                         <viewControllerLayoutGuide type="bottom" id="JVM-cW-omR"/>
@@ -133,12 +133,6 @@
                     <view key="view" contentMode="scaleToFill" id="rKy-ir-9jP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="igT-aI-PDt">
-                                <rect key="frame" x="20" y="72" width="135" height="127"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="7.4" id="fve-6b-CkE"/>
