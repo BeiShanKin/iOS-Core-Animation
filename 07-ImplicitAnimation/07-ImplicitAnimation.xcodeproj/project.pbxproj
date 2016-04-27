@@ -74,6 +74,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2865EDE01CD05B5900E0F627 /* 7.2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = 7.2;
+			sourceTree = "<group>";
+		};
 		28C4E8AE1CCF7EF5003DDA38 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +104,7 @@
 		28C4E8B91CCF7EF5003DDA38 /* 07-ImplicitAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				2865EDE01CD05B5900E0F627 /* 7.2 */,
 				28C4E8E81CCF7F5D003DDA38 /* 7.1 */,
 				28C4E8BA1CCF7EF5003DDA38 /* AppDelegate.swift */,
 				28C4E8BE1CCF7EF5003DDA38 /* Main.storyboard */,
@@ -493,6 +501,7 @@
 				28C4E8E11CCF7EF5003DDA38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28C4E8E21CCF7EF5003DDA38 /* Build configuration list for PBXNativeTarget "07-ImplicitAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +510,7 @@
 				28C4E8E41CCF7EF5003DDA38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28C4E8E51CCF7EF5003DDA38 /* Build configuration list for PBXNativeTarget "07-ImplicitAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +519,7 @@
 				28C4E8E71CCF7EF5003DDA38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
