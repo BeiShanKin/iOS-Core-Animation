@@ -15,10 +15,11 @@ class ColorChangeViewController: UIViewController {
         //CATransaction.begin() 和 CATransaction.commit()可以不用（要用就要成对出现），仅仅使用 CATransaction.setAnimationDuration(5.0)来设置时间
 //        CATransaction.begin()
         CATransaction.setAnimationDuration(5.0)
-        
+        // 用来关闭当前栈的动画效果
+        CATransaction.setDisableActions(true)
         CATransaction.setCompletionBlock { () -> Void in
             // 如果这里不设置时间，会使用默认的0.25s。这是因为完成块是在颜色渐变的事务提交并出栈之后才被执行，于是，用默认的事务做变换，默认的时间也就变成了0.25秒
-//            CATransaction.setAnimationDuration(1.0)
+            CATransaction.setAnimationDuration(10.0)
             self.colorLayer?.opacity = 0.1
         }
         

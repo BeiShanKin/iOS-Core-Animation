@@ -71,10 +71,10 @@
             </objects>
             <point key="canvasLocation" x="434" y="708"/>
         </scene>
-        <!--7.2-->
+        <!--7.3-->
         <scene sceneID="s5S-TU-iDa">
             <objects>
-                <viewController id="tB5-s5-Jdq" sceneMemberID="viewController">
+                <viewController id="tB5-s5-Jdq" customClass="TransitionViewController" customModule="_7_ImplicitAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="o4z-4C-sC9"/>
                         <viewControllerLayoutGuide type="bottom" id="g08-C4-iSS"/>
@@ -82,13 +82,70 @@
                     <view key="view" contentMode="scaleToFill" id="m0j-nN-lib">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VEj-5H-1bm">
+                                <rect key="frame" x="10" y="134" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="51f-FG-GLn"/>
+                                    <constraint firstAttribute="height" constant="300" id="wry-ZX-IRn"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAB-oW-kcJ">
+                                <rect key="frame" x="115" y="373" width="90" height="30"/>
+                                <state key="normal" title="ColorChange"/>
+                                <connections>
+                                    <action selector="ChangeClick:" destination="tB5-s5-Jdq" eventType="touchUpInside" id="Rfg-vo-hbf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CAB-oW-kcJ" firstAttribute="centerX" secondItem="m0j-nN-lib" secondAttribute="centerX" id="4Os-3a-sIe"/>
+                            <constraint firstItem="VEj-5H-1bm" firstAttribute="centerY" secondItem="m0j-nN-lib" secondAttribute="centerY" id="NDL-Y3-tZU"/>
+                            <constraint firstItem="VEj-5H-1bm" firstAttribute="centerX" secondItem="m0j-nN-lib" secondAttribute="centerX" id="uZe-aZ-UFJ"/>
+                            <constraint firstItem="CAB-oW-kcJ" firstAttribute="centerY" secondItem="m0j-nN-lib" secondAttribute="centerY" constant="104" id="wo8-vo-0A0"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="7.2" id="Xro-iW-AEt"/>
+                    <navigationItem key="navigationItem" title="7.3" id="Xro-iW-AEt">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="CDu-1n-NLi">
+                            <connections>
+                                <segue destination="t6c-QK-jKa" kind="push" id="eKN-wQ-NDb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="layerView" destination="VEj-5H-1bm" id="ZZI-F5-gj5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ulz-x2-BAd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="802" y="708"/>
+        </scene>
+        <!--7.4-->
+        <scene sceneID="pO2-Ka-7ic">
+            <objects>
+                <viewController id="t6c-QK-jKa" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5x8-5T-45S"/>
+                        <viewControllerLayoutGuide type="bottom" id="JVM-cW-omR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rKy-ir-9jP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="igT-aI-PDt">
+                                <rect key="frame" x="20" y="72" width="135" height="127"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="7.4" id="fve-6b-CkE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KTS-td-T7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1169" y="708"/>
         </scene>
     </scenes>
 </document>
