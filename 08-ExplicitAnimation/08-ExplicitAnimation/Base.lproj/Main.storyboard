@@ -19,7 +19,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Group" id="ys7-Gu-ifd">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="GvZ-3i-kLp">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="GvZ-3i-kLp">
                             <connections>
                                 <segue destination="zvE-Ec-XNc" kind="push" id="ZVc-8g-tt5"/>
                             </connections>
@@ -48,7 +48,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Transition" id="m5H-sA-OTd"/>
+                    <navigationItem key="navigationItem" title="Transition" id="m5H-sA-OTd">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="mmk-Dm-QjV">
+                            <connections>
+                                <segue destination="V5D-kC-jXt" kind="push" id="5eX-gi-mP7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="rh2-T9-Vd0" id="dEL-2o-2FJ"/>
                     </connections>
@@ -56,6 +62,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LG0-Ws-wox" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="482" y="1042"/>
+        </scene>
+        <!--StopAnimation-->
+        <scene sceneID="PHV-kD-Mhm">
+            <objects>
+                <viewController id="V5D-kC-jXt" customClass="StopViewController" customModule="_8_ExplicitAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IbC-L9-LOI"/>
+                        <viewControllerLayoutGuide type="bottom" id="yV2-Q5-YeG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xuY-vz-8AJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Spaceship" translatesAutoresizingMaskIntoConstraints="NO" id="lNk-Js-dmT">
+                                <rect key="frame" x="60" y="143" width="200" height="200"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEQ-a4-7tP">
+                                <rect key="frame" x="221" y="412" width="32" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopClick:" destination="V5D-kC-jXt" eventType="touchUpInside" id="7So-7Y-RTm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8p-zz-i3j">
+                                <rect key="frame" x="78" y="412" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startClick:" destination="V5D-kC-jXt" eventType="touchUpInside" id="4Ji-Bt-THn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="StopAnimation" id="Trm-iJ-bYK"/>
+                    <connections>
+                        <outlet property="imageView" destination="lNk-Js-dmT" id="hEG-mj-gfx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ZF-2E-i1Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="1042"/>
         </scene>
         <!--Transition Navigation Controller-->
         <scene sceneID="LaM-j1-J0a">
@@ -226,4 +273,7 @@
             <point key="canvasLocation" x="1593" y="351"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Spaceship" width="200" height="200"/>
+    </resources>
 </document>

@@ -16,8 +16,14 @@ class TransitionNavigationController: UINavigationController {
     }
     
     override func pushViewController(viewController: UIViewController, animated: Bool) {
+        // 获取一个Image画布
         UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, true, 0.0)
+        // 把图层的内容绘制到当前画布上
+        /**
+        这里有个警告：-renderInContext:捕获了图层的图片和子图层，但是不能对子图层正确地处理变换效果，而且对视频和OpenGL内容也不起作用。但是用CATransition，或者用私有的截屏方式就没有这个限制了。
+        */
         self.view.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        // 把当前画布转化为一张图片
         let currentScreen = UIGraphicsGetImageFromCurrentImageContext()
         
         let screenImageView = UIImageView.init(image: currentScreen!)

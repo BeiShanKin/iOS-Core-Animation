@@ -21,6 +21,7 @@
 		286796371CD1F2CE00C49700 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286796361CD1F2CE00C49700 /* GroupViewController.swift */; };
 		2867963A1CD1FB6A00C49700 /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286796391CD1FB6A00C49700 /* TransitionViewController.swift */; };
 		2867963C1CD206B700C49700 /* TransitionNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2867963B1CD206B700C49700 /* TransitionNavigationController.swift */; };
+		2867963F1CD217F000C49700 /* StopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2867963E1CD217F000C49700 /* StopViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		286796361CD1F2CE00C49700 /* GroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		286796391CD1FB6A00C49700 /* TransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
 		2867963B1CD206B700C49700 /* TransitionNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionNavigationController.swift; sourceTree = "<group>"; };
+		2867963E1CD217F000C49700 /* StopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		2865EDF11CD08D4F00E0F627 /* 08-ExplicitAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				2867963D1CD2175C00C49700 /* 8.4 */,
 				286796381CD1FB5B00C49700 /* 8.3 */,
 				286796351CD1F0F100C49700 /* 8.2 */,
 				2865EE201CD08D7800E0F627 /* 8.1 */,
@@ -168,6 +171,14 @@
 				2867963B1CD206B700C49700 /* TransitionNavigationController.swift */,
 			);
 			name = 8.3;
+			sourceTree = "<group>";
+		};
+		2867963D1CD2175C00C49700 /* 8.4 */ = {
+			isa = PBXGroup;
+			children = (
+				2867963E1CD217F000C49700 /* StopViewController.swift */,
+			);
+			name = 8.4;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +321,7 @@
 				2865EDF31CD08D4F00E0F627 /* AppDelegate.swift in Sources */,
 				2867963A1CD1FB6A00C49700 /* TransitionViewController.swift in Sources */,
 				2865EE261CD0C98900E0F627 /* ColorKeyViewController.swift in Sources */,
+				2867963F1CD217F000C49700 /* StopViewController.swift in Sources */,
 				2865EE281CD0CCE800E0F627 /* PathKeyViewController.swift in Sources */,
 				2865EE221CD08D9700E0F627 /* PropertyViewController.swift in Sources */,
 				286796371CD1F2CE00C49700 /* GroupViewController.swift in Sources */,
