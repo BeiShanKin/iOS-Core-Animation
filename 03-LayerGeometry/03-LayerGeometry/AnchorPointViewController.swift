@@ -41,9 +41,11 @@ class AnchorPointViewController: UIViewController {
         let hour = (Double(components.hour) / 12.0) * M_PI * 2.0
         let minute = (Double(components.minute) / 60.0) * M_PI * 2.0
         let second = (Double(components.second) / 60.0) * M_PI * 2.0
+        UIView.beginAnimations(nil, context: nil)
         self.hourHandImageView.transform = CGAffineTransformMakeRotation(CGFloat(hour))
         self.minuteHandImageView.transform = CGAffineTransformMakeRotation(CGFloat(minute))
         self.secondHandImageView.transform = CGAffineTransformMakeRotation(CGFloat(second))
+        UIView.commitAnimations()
     }
     
     func getCurrentTime() -> NSDateComponents {

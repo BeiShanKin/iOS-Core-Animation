@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="d8q-iH-X8l">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="LaM-j1-J0a">
+            <objects>
+                <navigationController id="d8q-iH-X8l" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jOh-Rq-7pk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ree-dh-zON" kind="relationship" relationship="rootViewController" id="iVR-Uj-R42"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1oh-Bv-t6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-267" y="353"/>
+        </scene>
+        <!--PropertyAnimation-->
+        <scene sceneID="GeO-JZ-voI">
+            <objects>
+                <viewController id="Ree-dh-zON" customClass="PropertyViewController" customModule="_8_ExplicitAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kei-Iu-Gu5"/>
+                        <viewControllerLayoutGuide type="bottom" id="gSs-ud-CmE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hoP-rc-nLe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZS-y2-5cF">
+                                <rect key="frame" x="10" y="134" width="300" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3j0-1q-oiD">
+                                        <rect key="frame" x="105" y="241" width="90" height="30"/>
+                                        <state key="normal" title="ColorChange"/>
+                                        <connections>
+                                            <action selector="changeClick:" destination="Ree-dh-zON" eventType="touchUpInside" id="m4U-bL-DTH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="3Ur-hf-kKp"/>
+                                    <constraint firstAttribute="height" constant="300" id="9a6-fp-3wb"/>
+                                    <constraint firstItem="3j0-1q-oiD" firstAttribute="centerY" secondItem="CZS-y2-5cF" secondAttribute="centerY" constant="106" id="ROq-90-hFd"/>
+                                    <constraint firstItem="3j0-1q-oiD" firstAttribute="centerX" secondItem="CZS-y2-5cF" secondAttribute="centerX" id="RXP-d7-5BI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CZS-y2-5cF" firstAttribute="centerX" secondItem="hoP-rc-nLe" secondAttribute="centerX" id="PjB-mF-BER"/>
+                            <constraint firstItem="CZS-y2-5cF" firstAttribute="centerY" secondItem="hoP-rc-nLe" secondAttribute="centerY" id="yqI-ss-jOY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PropertyAnimation" id="y6t-vo-YN4">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="fOW-L4-tWF">
+                            <connections>
+                                <segue destination="Ed9-w7-U4g" kind="push" id="6ii-9x-KUi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="contianerView" destination="CZS-y2-5cF" id="AHH-cZ-gWS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lKd-w5-9HX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99" y="353"/>
+        </scene>
+        <!--Clock-->
+        <scene sceneID="bKf-go-r65">
+            <objects>
+                <viewController id="Ed9-w7-U4g" customClass="ClockViewController" customModule="_8_ExplicitAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GAY-gl-dz4"/>
+                        <viewControllerLayoutGuide type="bottom" id="tEO-dw-bir"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ikl-Ic-geC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Clock" id="5Cg-tH-TpZ">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="bGE-Sh-pa3">
+                            <connections>
+                                <segue destination="u7q-sB-C1N" kind="push" id="fAd-S2-TaH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Dw-dO-H2r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="482" y="351"/>
+        </scene>
+        <!--ColorKey-->
+        <scene sceneID="2z1-Bm-wBl">
+            <objects>
+                <viewController id="u7q-sB-C1N" customClass="ColorKeyViewController" customModule="_8_ExplicitAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cd1-h0-zZL"/>
+                        <viewControllerLayoutGuide type="bottom" id="XVb-KF-xQO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cKy-Yy-81j">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ColorKey" id="fMF-tz-u66">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="C3Z-aB-FOr">
+                            <connections>
+                                <segue destination="wEb-BG-vch" kind="push" id="WtT-fJ-xs9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VkL-So-6pM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="353"/>
+        </scene>
+        <!--PathKey-->
+        <scene sceneID="Aeb-gV-EFl">
+            <objects>
+                <viewController id="wEb-BG-vch" customClass="PathKeyViewController" customModule="_8_ExplicitAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ab1-Hn-EPx"/>
+                        <viewControllerLayoutGuide type="bottom" id="kiN-0T-Orx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ikP-ZP-f6M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="PathKey" id="IOj-X0-TPl">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="cAi-Tq-Gdq">
+                            <connections>
+                                <segue destination="ebh-ev-JBF" kind="push" id="VfS-kV-tow"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="crJ-TY-mGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1225" y="353"/>
+        </scene>
+        <!--virtualProperty-->
+        <scene sceneID="PEd-zS-RAP">
+            <objects>
+                <viewController id="ebh-ev-JBF" customClass="VirtualViewController" customModule="_8_ExplicitAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j3v-QU-Lkh"/>
+                        <viewControllerLayoutGuide type="bottom" id="The-P2-0NF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SV7-CG-bDx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="virtualProperty" id="01P-EO-gbC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4MY-na-oKs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1593" y="351"/>
+        </scene>
+    </scenes>
+</document>
