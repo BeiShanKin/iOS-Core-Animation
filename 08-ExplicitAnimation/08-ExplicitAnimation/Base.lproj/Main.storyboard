@@ -5,10 +5,62 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Group-->
+        <scene sceneID="wHc-dW-v8m">
+            <objects>
+                <viewController id="7UV-Q5-DnM" customClass="GroupViewController" customModule="_8_ExplicitAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a3A-ke-uvB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lgc-Ea-oPj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mt4-ot-UOW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Group" id="ys7-Gu-ifd">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="GvZ-3i-kLp">
+                            <connections>
+                                <segue destination="zvE-Ec-XNc" kind="push" id="ZVc-8g-tt5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AFA-zA-SrX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99" y="1042"/>
+        </scene>
+        <!--Transition-->
+        <scene sceneID="tVf-ys-Icj">
+            <objects>
+                <viewController id="zvE-Ec-XNc" customClass="TransitionViewController" customModule="_8_ExplicitAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Va2-8H-ZKg"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZlK-VT-0yY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jFr-Tm-aig">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rh2-T9-Vd0">
+                                <rect key="frame" x="10" y="72" width="300" height="300"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Transition" id="m5H-sA-OTd"/>
+                    <connections>
+                        <outlet property="imageView" destination="rh2-T9-Vd0" id="dEL-2o-2FJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LG0-Ws-wox" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="482" y="1042"/>
+        </scene>
+        <!--Transition Navigation Controller-->
         <scene sceneID="LaM-j1-J0a">
             <objects>
-                <navigationController id="d8q-iH-X8l" sceneMemberID="viewController">
+                <navigationController id="d8q-iH-X8l" customClass="TransitionNavigationController" customModule="_8_ExplicitAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jOh-Rq-7pk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -60,7 +112,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="PropertyAnimation" id="y6t-vo-YN4">
-                        <barButtonItem key="rightBarButtonItem" title="next" id="fOW-L4-tWF">
+                        <barButtonItem key="leftBarButtonItem" title="next" id="jnE-P8-GhR">
+                            <connections>
+                                <segue destination="7UV-Q5-DnM" kind="push" id="FlQ-05-GYU"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="8.1" id="fOW-L4-tWF">
                             <connections>
                                 <segue destination="Ed9-w7-U4g" kind="push" id="6ii-9x-KUi"/>
                             </connections>
@@ -113,7 +170,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="ColorKey" id="fMF-tz-u66">
-                        <barButtonItem key="rightBarButtonItem" title="next" id="C3Z-aB-FOr">
+                        <barButtonItem key="rightBarButtonItem" title="8.1" id="C3Z-aB-FOr">
                             <connections>
                                 <segue destination="wEb-BG-vch" kind="push" id="WtT-fJ-xs9"/>
                             </connections>

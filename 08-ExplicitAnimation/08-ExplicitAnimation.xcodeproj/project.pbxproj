@@ -18,6 +18,9 @@
 		2865EE261CD0C98900E0F627 /* ColorKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2865EE251CD0C98900E0F627 /* ColorKeyViewController.swift */; };
 		2865EE281CD0CCE800E0F627 /* PathKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2865EE271CD0CCE800E0F627 /* PathKeyViewController.swift */; };
 		286796311CD1A9CF00C49700 /* VirtualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286796301CD1A9CF00C49700 /* VirtualViewController.swift */; };
+		286796371CD1F2CE00C49700 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286796361CD1F2CE00C49700 /* GroupViewController.swift */; };
+		2867963A1CD1FB6A00C49700 /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286796391CD1FB6A00C49700 /* TransitionViewController.swift */; };
+		2867963C1CD206B700C49700 /* TransitionNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2867963B1CD206B700C49700 /* TransitionNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		2865EE251CD0C98900E0F627 /* ColorKeyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorKeyViewController.swift; sourceTree = "<group>"; };
 		2865EE271CD0CCE800E0F627 /* PathKeyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathKeyViewController.swift; sourceTree = "<group>"; };
 		286796301CD1A9CF00C49700 /* VirtualViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualViewController.swift; sourceTree = "<group>"; };
+		286796361CD1F2CE00C49700 /* GroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		286796391CD1FB6A00C49700 /* TransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
+		2867963B1CD206B700C49700 /* TransitionNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,8 @@
 		2865EDF11CD08D4F00E0F627 /* 08-ExplicitAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				286796381CD1FB5B00C49700 /* 8.3 */,
+				286796351CD1F0F100C49700 /* 8.2 */,
 				2865EE201CD08D7800E0F627 /* 8.1 */,
 				2865EDF21CD08D4F00E0F627 /* AppDelegate.swift */,
 				2865EDF61CD08D4F00E0F627 /* Main.storyboard */,
@@ -143,6 +151,23 @@
 				286796301CD1A9CF00C49700 /* VirtualViewController.swift */,
 			);
 			name = 8.1;
+			sourceTree = "<group>";
+		};
+		286796351CD1F0F100C49700 /* 8.2 */ = {
+			isa = PBXGroup;
+			children = (
+				286796361CD1F2CE00C49700 /* GroupViewController.swift */,
+			);
+			name = 8.2;
+			sourceTree = "<group>";
+		};
+		286796381CD1FB5B00C49700 /* 8.3 */ = {
+			isa = PBXGroup;
+			children = (
+				286796391CD1FB6A00C49700 /* TransitionViewController.swift */,
+				2867963B1CD206B700C49700 /* TransitionNavigationController.swift */,
+			);
+			name = 8.3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,12 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2867963C1CD206B700C49700 /* TransitionNavigationController.swift in Sources */,
 				286796311CD1A9CF00C49700 /* VirtualViewController.swift in Sources */,
 				2865EE241CD0B28900E0F627 /* ClockViewController.swift in Sources */,
 				2865EDF31CD08D4F00E0F627 /* AppDelegate.swift in Sources */,
+				2867963A1CD1FB6A00C49700 /* TransitionViewController.swift in Sources */,
 				2865EE261CD0C98900E0F627 /* ColorKeyViewController.swift in Sources */,
 				2865EE281CD0CCE800E0F627 /* PathKeyViewController.swift in Sources */,
 				2865EE221CD08D9700E0F627 /* PropertyViewController.swift in Sources */,
+				286796371CD1F2CE00C49700 /* GroupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
