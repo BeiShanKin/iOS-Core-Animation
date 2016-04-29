@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="71D-MG-2AH">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Zx5-AJ-48B">
+            <objects>
+                <navigationController id="71D-MG-2AH" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1ui-4k-STM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KvW-Bz-ith" kind="relationship" relationship="rootViewController" id="eNr-mq-pax"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="crG-xw-8Lj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-519" y="275"/>
+        </scene>
+        <!--CAMediaTiming-->
+        <scene sceneID="9vH-Bi-s0n">
+            <objects>
+                <viewController id="KvW-Bz-ith" customClass="MediaTimingViewController" customModule="_9_MediaTiming" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fks-do-vml"/>
+                        <viewControllerLayoutGuide type="bottom" id="3T4-MZ-GA8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jCg-vA-DGx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ship" translatesAutoresizingMaskIntoConstraints="NO" id="6Ea-Mb-Tj4">
+                                <rect key="frame" x="96" y="148" width="128" height="128"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Duration" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dAZ-JM-d6y">
+                                <rect key="frame" x="20" y="360" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="RepeatCount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sng-If-CZo">
+                                <rect key="frame" x="194" y="360" width="106" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfA-Ji-Pt1">
+                                <rect key="frame" x="108" y="434" width="105" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startClick:" destination="KvW-Bz-ith" eventType="touchUpInside" id="rh0-a1-5kg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CAMediaTiming" id="v5w-sk-wJ8">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="45D-Tf-zFM">
+                            <connections>
+                                <segue destination="ena-nL-peP" kind="push" id="ULY-oh-toV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="durationTextField" destination="dAZ-JM-d6y" id="keu-Cv-xgu"/>
+                        <outlet property="imageView" destination="6Ea-Mb-Tj4" id="w3s-aH-RNq"/>
+                        <outlet property="repeatCountTextField" destination="sng-If-CZo" id="7JT-gC-Ha5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RCe-6x-uWK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-145" y="275"/>
+        </scene>
+        <!--AutoReverse-->
+        <scene sceneID="FOP-LF-Vie">
+            <objects>
+                <viewController id="ena-nL-peP" customClass="ReverseViewController" customModule="_9_MediaTiming" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="req-yX-3Jm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y5U-rb-8tC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7RE-7j-rkK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="AutoReverse" id="lQi-C8-YAN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bik-fe-GDa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="223" y="275"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ship" width="128" height="128"/>
+    </resources>
+</document>

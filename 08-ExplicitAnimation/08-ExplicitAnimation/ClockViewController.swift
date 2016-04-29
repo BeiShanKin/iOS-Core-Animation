@@ -73,7 +73,11 @@ class ClockViewController: UIViewController {
             animation.toValue = NSValue(CATransform3D: CATransform3DMakeRotation(angle, 0, 0, 1))
             animation.duration = 0.5
             animation.delegate = self
+            animation.timingFunction = CAMediaTimingFunction.init(name: kCAMediaTimingFunctionDefault)
+            // 如果removedOnCompletion 为 ture,那么不论fillMode是什么，动画效果结束后，都会恢复原样。如果removedOnCompletion 为 false,fillMode 为kCAFillModeForwards 和 kCAFillModeBoth时，会让图层处于新位置，为其他值是不会。
             animation.fillMode = kCAFillModeForwards
+            // 动画结束时是否从呈现树种移除，默认是true
+            animation.removedOnCompletion = false
             animation.setValue(handView, forKey: "handView")
             handView.layer.addAnimation(animation, forKey: nil)
         } else {
@@ -90,11 +94,11 @@ class ClockViewController: UIViewController {
         return components!
     }
     
-    override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
-        let handView = anim.valueForKey("handView")
-        let animation = anim as! CABasicAnimation
-        handView?.layer.transform = (animation.toValue?.CATransform3DValue)!
-    }
+//    override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
+//        let handView = anim.valueForKey("handView")
+//        let animation = anim as! CABasicAnimation
+//        handView?.layer.transform = (animation.toValue?.CATransform3DValue)!
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
