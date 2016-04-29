@@ -76,7 +76,7 @@ class ClockViewController: UIViewController {
             animation.timingFunction = CAMediaTimingFunction.init(name: kCAMediaTimingFunctionDefault)
             // 如果removedOnCompletion 为 ture,那么不论fillMode是什么，动画效果结束后，都会恢复原样。如果removedOnCompletion 为 false,fillMode 为kCAFillModeForwards 和 kCAFillModeBoth时，会让图层处于新位置，为其他值是不会。
             animation.fillMode = kCAFillModeForwards
-            // 动画结束时是否从呈现树种移除，默认是true
+            // 动画结束时是否从呈现树种移除，默认是true。如果设为false时，动画就不会自动被移除，所以最好在添加动画时设置一个非nil的key，方便以后移除
             animation.removedOnCompletion = false
             animation.setValue(handView, forKey: "handView")
             handView.layer.addAnimation(animation, forKey: nil)
