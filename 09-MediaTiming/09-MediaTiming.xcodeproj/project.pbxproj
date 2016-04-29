@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		284E31AB1CD2FB7000640800 /* ReverseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E31AA1CD2FB7000640800 /* ReverseViewController.swift */; };
+		284E31AE1CD3299C00640800 /* PanAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E31AD1CD3299C00640800 /* PanAnimationViewController.swift */; };
 		2867964D1CD2207B00C49700 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2867964C1CD2207B00C49700 /* AppDelegate.swift */; };
 		286796521CD2207B00C49700 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286796501CD2207B00C49700 /* Main.storyboard */; };
 		286796541CD2207B00C49700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 286796531CD2207B00C49700 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		284E31AA1CD2FB7000640800 /* ReverseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseViewController.swift; sourceTree = "<group>"; };
+		284E31AD1CD3299C00640800 /* PanAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanAnimationViewController.swift; sourceTree = "<group>"; };
 		286796491CD2207B00C49700 /* 09-MediaTiming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "09-MediaTiming.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2867964C1CD2207B00C49700 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		286796511CD2207B00C49700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,11 +78,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		284E31A91CD2FB3500640800 /* 9.2 */ = {
+		284E31A91CD2FB3500640800 /* 9.3 */ = {
 			isa = PBXGroup;
 			children = (
+				284E31AD1CD3299C00640800 /* PanAnimationViewController.swift */,
 			);
-			name = 9.2;
+			name = 9.3;
 			sourceTree = "<group>";
 		};
 		286796401CD2207A00C49700 = {
@@ -106,7 +109,7 @@
 		2867964B1CD2207B00C49700 /* 09-MediaTiming */ = {
 			isa = PBXGroup;
 			children = (
-				284E31A91CD2FB3500640800 /* 9.2 */,
+				284E31A91CD2FB3500640800 /* 9.3 */,
 				2867967A1CD220D300C49700 /* 9.1 */,
 				2867964C1CD2207B00C49700 /* AppDelegate.swift */,
 				286796501CD2207B00C49700 /* Main.storyboard */,
@@ -280,6 +283,7 @@
 			files = (
 				2867964D1CD2207B00C49700 /* AppDelegate.swift in Sources */,
 				284E31AB1CD2FB7000640800 /* ReverseViewController.swift in Sources */,
+				284E31AE1CD3299C00640800 /* PanAnimationViewController.swift in Sources */,
 				2867967C1CD220E500C49700 /* MediaTimingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

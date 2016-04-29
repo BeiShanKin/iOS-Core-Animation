@@ -86,14 +86,61 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="AutoReverse" id="lQi-C8-YAN"/>
+                    <navigationItem key="navigationItem" title="AutoReverse" id="lQi-C8-YAN">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="pyJ-SP-0Fr">
+                            <connections>
+                                <segue destination="YvC-ya-vZy" kind="push" id="Ebi-Hc-c49"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bik-fe-GDa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="223" y="275"/>
         </scene>
+        <!--PanAnimation-->
+        <scene sceneID="YfN-gP-7US">
+            <objects>
+                <viewController id="YvC-ya-vZy" customClass="PanAnimationViewController" customModule="_9_MediaTiming" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XH5-X3-iri"/>
+                        <viewControllerLayoutGuide type="bottom" id="xq3-EA-E5D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WlL-bF-maE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Door" translatesAutoresizingMaskIntoConstraints="NO" id="I1M-UD-jwg">
+                                <rect key="frame" x="96" y="166" width="128" height="256"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="I1M-UD-jwg" firstAttribute="centerY" secondItem="WlL-bF-maE" secondAttribute="centerY" constant="10" id="oz9-th-Q3n"/>
+                            <constraint firstItem="I1M-UD-jwg" firstAttribute="centerX" secondItem="WlL-bF-maE" secondAttribute="centerX" id="wfO-3N-IXZ"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="lzD-dU-yYt" appends="YES" id="ZrT-Uq-A22"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="PanAnimation" id="0VK-ff-JYx"/>
+                    <connections>
+                        <outlet property="doorImageView" destination="I1M-UD-jwg" id="xRg-uI-LOc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8hx-pb-HBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="lzD-dU-yYt">
+                    <connections>
+                        <action selector="pan:" destination="YvC-ya-vZy" id="fZ6-MY-vkB"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="601" y="275"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Door" width="128" height="256"/>
         <image name="Ship" width="128" height="128"/>
     </resources>
 </document>
