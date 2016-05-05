@@ -14,6 +14,8 @@
 		283A2C641CD9FCC700024EEB /* _0_CAMediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283A2C631CD9FCC700024EEB /* _0_CAMediaTests.swift */; };
 		283A2C6F1CD9FCC700024EEB /* _0_CAMediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283A2C6E1CD9FCC700024EEB /* _0_CAMediaUITests.swift */; };
 		283A2C7E1CD9FD2F00024EEB /* CAMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283A2C7D1CD9FD2F00024EEB /* CAMediaViewController.swift */; };
+		283A2C811CDA018E00024EEB /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283A2C801CDA018E00024EEB /* TimeLineViewController.swift */; };
+		286F8F2B1CDAE213008458C1 /* BallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F8F2A1CDAE213008458C1 /* BallViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		283A2C6E1CD9FCC700024EEB /* _0_CAMediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0_CAMediaUITests.swift; sourceTree = "<group>"; };
 		283A2C701CD9FCC700024EEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		283A2C7D1CD9FD2F00024EEB /* CAMediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAMediaViewController.swift; sourceTree = "<group>"; };
+		283A2C801CDA018E00024EEB /* TimeLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
+		286F8F2A1CDAE213008458C1 /* BallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		283A2C4D1CD9FCC700024EEB /* 10-CAMedia */ = {
 			isa = PBXGroup;
 			children = (
+				283A2C7F1CDA017B00024EEB /* 10.2 */,
 				283A2C7C1CD9FD1100024EEB /* 10.1 */,
 				283A2C4E1CD9FCC700024EEB /* AppDelegate.swift */,
 				283A2C521CD9FCC700024EEB /* Main.storyboard */,
@@ -131,6 +136,15 @@
 				283A2C7D1CD9FD2F00024EEB /* CAMediaViewController.swift */,
 			);
 			name = 10.1;
+			sourceTree = "<group>";
+		};
+		283A2C7F1CDA017B00024EEB /* 10.2 */ = {
+			isa = PBXGroup;
+			children = (
+				283A2C801CDA018E00024EEB /* TimeLineViewController.swift */,
+				286F8F2A1CDAE213008458C1 /* BallViewController.swift */,
+			);
+			name = 10.2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +282,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				283A2C4F1CD9FCC700024EEB /* AppDelegate.swift in Sources */,
+				286F8F2B1CDAE213008458C1 /* BallViewController.swift in Sources */,
 				283A2C7E1CD9FD2F00024EEB /* CAMediaViewController.swift in Sources */,
+				283A2C811CDA018E00024EEB /* TimeLineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +428,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bravesoft.-0-CAMedia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -423,6 +440,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bravesoft.-0-CAMedia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -493,6 +511,7 @@
 				283A2C751CD9FCC700024EEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		283A2C761CD9FCC700024EEB /* Build configuration list for PBXNativeTarget "10-CAMediaTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +520,7 @@
 				283A2C781CD9FCC700024EEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		283A2C791CD9FCC700024EEB /* Build configuration list for PBXNativeTarget "10-CAMediaUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +529,7 @@
 				283A2C7B1CD9FCC700024EEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
