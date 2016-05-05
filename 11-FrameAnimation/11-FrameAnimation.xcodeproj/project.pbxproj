@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		286F8F3D1CDB282D008458C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F8F3C1CDB282D008458C1 /* AppDelegate.swift */; };
-		286F8F3F1CDB282D008458C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F8F3E1CDB282D008458C1 /* ViewController.swift */; };
 		286F8F421CDB282D008458C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286F8F401CDB282D008458C1 /* Main.storyboard */; };
 		286F8F441CDB282D008458C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 286F8F431CDB282D008458C1 /* Assets.xcassets */; };
 		286F8F471CDB282D008458C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286F8F451CDB282D008458C1 /* LaunchScreen.storyboard */; };
 		286F8F521CDB282D008458C1 /* _1_FrameAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F8F511CDB282D008458C1 /* _1_FrameAnimationTests.swift */; };
 		286F8F5D1CDB282D008458C1 /* _1_FrameAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F8F5C1CDB282D008458C1 /* _1_FrameAnimationUITests.swift */; };
+		286F8F6D1CDB30A1008458C1 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F8F6C1CDB30A1008458C1 /* TimerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		286F8F391CDB282D008458C1 /* 11-FrameAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "11-FrameAnimation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		286F8F3C1CDB282D008458C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		286F8F3E1CDB282D008458C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		286F8F411CDB282D008458C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		286F8F431CDB282D008458C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		286F8F461CDB282D008458C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		286F8F581CDB282D008458C1 /* 11-FrameAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "11-FrameAnimationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		286F8F5C1CDB282D008458C1 /* _1_FrameAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _1_FrameAnimationUITests.swift; sourceTree = "<group>"; };
 		286F8F5E1CDB282D008458C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		286F8F6C1CDB30A1008458C1 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 		286F8F3B1CDB282D008458C1 /* 11-FrameAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				286F8F6B1CDB3079008458C1 /* 11.1 */,
 				286F8F3C1CDB282D008458C1 /* AppDelegate.swift */,
-				286F8F3E1CDB282D008458C1 /* ViewController.swift */,
 				286F8F401CDB282D008458C1 /* Main.storyboard */,
 				286F8F431CDB282D008458C1 /* Assets.xcassets */,
 				286F8F451CDB282D008458C1 /* LaunchScreen.storyboard */,
@@ -123,6 +123,14 @@
 				286F8F5E1CDB282D008458C1 /* Info.plist */,
 			);
 			path = "11-FrameAnimationUITests";
+			sourceTree = "<group>";
+		};
+		286F8F6B1CDB3079008458C1 /* 11.1 */ = {
+			isa = PBXGroup;
+			children = (
+				286F8F6C1CDB30A1008458C1 /* TimerViewController.swift */,
+			);
+			name = 11.1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				286F8F3F1CDB282D008458C1 /* ViewController.swift in Sources */,
+				286F8F6D1CDB30A1008458C1 /* TimerViewController.swift in Sources */,
 				286F8F3D1CDB282D008458C1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +493,7 @@
 				286F8F631CDB282D008458C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		286F8F641CDB282D008458C1 /* Build configuration list for PBXNativeTarget "11-FrameAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +502,7 @@
 				286F8F661CDB282D008458C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		286F8F671CDB282D008458C1 /* Build configuration list for PBXNativeTarget "11-FrameAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +511,7 @@
 				286F8F691CDB282D008458C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

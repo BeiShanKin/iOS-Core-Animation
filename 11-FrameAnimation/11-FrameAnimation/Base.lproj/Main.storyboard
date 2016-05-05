@@ -1,26 +1,61 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="v50-2c-vTA">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="Usq-Ku-6YF">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_1_FrameAnimation" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <navigationController id="v50-2c-vTA" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="o68-uX-XcP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Vxk-k2-178" kind="relationship" relationship="rootViewController" id="eKx-fx-CKo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ie-aL-O1k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-36" y="408"/>
+        </scene>
+        <!--NSTimer-->
+        <scene sceneID="x6z-rB-BfN">
+            <objects>
+                <viewController id="Vxk-k2-178" customClass="TimerViewController" customModule="_1_FrameAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nfn-3Q-iZx"/>
+                        <viewControllerLayoutGuide type="bottom" id="jrR-dq-yF4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uA1-k9-Trt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7lT-TC-5iR">
+                                <rect key="frame" x="10" y="134" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="EY9-Lr-9p2"/>
+                                    <constraint firstAttribute="height" constant="300" id="Jjb-nx-mx8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7lT-TC-5iR" firstAttribute="centerY" secondItem="uA1-k9-Trt" secondAttribute="centerY" id="dKx-9E-XPl"/>
+                            <constraint firstItem="7lT-TC-5iR" firstAttribute="centerX" secondItem="uA1-k9-Trt" secondAttribute="centerX" id="rHo-tj-NH7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="NSTimer" id="zjG-Lt-6cg"/>
+                    <connections>
+                        <outlet property="containerView" destination="7lT-TC-5iR" id="Vf8-u6-fU9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fkl-J7-IYh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="366" y="408"/>
         </scene>
     </scenes>
 </document>
