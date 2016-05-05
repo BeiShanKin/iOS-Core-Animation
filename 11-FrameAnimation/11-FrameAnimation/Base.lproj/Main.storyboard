@@ -48,14 +48,56 @@
                             <constraint firstItem="7lT-TC-5iR" firstAttribute="centerX" secondItem="uA1-k9-Trt" secondAttribute="centerX" id="rHo-tj-NH7"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="NSTimer" id="zjG-Lt-6cg"/>
+                    <navigationItem key="navigationItem" title="NSTimer" id="zjG-Lt-6cg">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="bcd-I6-loc">
+                            <connections>
+                                <segue destination="DMy-AF-mcu" kind="push" id="RhE-pL-ith"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="containerView" destination="7lT-TC-5iR" id="Vf8-u6-fU9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fkl-J7-IYh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="366" y="408"/>
+            <point key="canvasLocation" x="318" y="408"/>
+        </scene>
+        <!--CADisplayLink-->
+        <scene sceneID="wga-Ob-RyS">
+            <objects>
+                <viewController id="DMy-AF-mcu" customClass="CADisplayViewController" customModule="_1_FrameAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uHU-au-dL0"/>
+                        <viewControllerLayoutGuide type="bottom" id="kqM-Z5-jnw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bk4-0H-Bel">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Dn-Ie-pFe">
+                                <rect key="frame" x="10" y="134" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="CZY-Nw-pnV"/>
+                                    <constraint firstAttribute="width" constant="300" id="SLV-tT-3Ky"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Dn-Ie-pFe" firstAttribute="centerY" secondItem="bk4-0H-Bel" secondAttribute="centerY" id="HtM-2n-5nP"/>
+                            <constraint firstItem="0Dn-Ie-pFe" firstAttribute="centerX" secondItem="bk4-0H-Bel" secondAttribute="centerX" id="w6g-yo-eH2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="CADisplayLink" id="Nhm-zv-3OT"/>
+                    <connections>
+                        <outlet property="containerView" destination="0Dn-Ie-pFe" id="zCe-fq-G7h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BCd-85-LNe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="408"/>
         </scene>
     </scenes>
 </document>
