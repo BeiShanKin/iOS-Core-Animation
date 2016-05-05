@@ -27,7 +27,16 @@ class BallViewController: UIViewController {
         animation.delegate = self
         animation.fillMode = kCAFillModeForwards
         animation.removedOnCompletion = false
-        animation.values = [NSValue.init(CGPoint: CGPoint(x: 150, y: 32)),NSValue.init(CGPoint: CGPoint(x: 150, y: 268)),NSValue.init(CGPoint: CGPoint(x: 150, y: 140)),NSValue.init(CGPoint: CGPoint(x: 150, y: 268)),NSValue.init(CGPoint: CGPoint(x: 150, y: 220)),NSValue.init(CGPoint: CGPoint(x: 150, y: 268)),NSValue.init(CGPoint: CGPoint(x: 150, y: 250)),NSValue.init(CGPoint: CGPoint(x: 150, y: 268))]
+        animation.values = [
+                            NSValue.init(CGPoint: CGPoint(x: 150, y: 32)),
+                            NSValue.init(CGPoint: CGPoint(x: 150, y: 268)),
+                            NSValue.init(CGPoint: CGPoint(x: 150, y: 140)),
+                            NSValue.init(CGPoint: CGPoint(x: 150, y: 268)),
+                            NSValue.init(CGPoint: CGPoint(x: 150, y: 220)),
+                            NSValue.init(CGPoint: CGPoint(x: 150, y: 268)),
+                            NSValue.init(CGPoint: CGPoint(x: 150, y: 250)),
+                            NSValue.init(CGPoint: CGPoint(x: 150, y: 268))
+        ]
         let tf1 = CAMediaTimingFunction.init(name: kCAMediaTimingFunctionEaseIn)
         let tf2 = CAMediaTimingFunction.init(name: kCAMediaTimingFunctionEaseOut)
         animation.timingFunctions = [tf1,tf2,tf1,tf2,tf1,tf2]

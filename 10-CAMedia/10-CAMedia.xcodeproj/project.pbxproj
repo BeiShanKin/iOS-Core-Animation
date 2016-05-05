@@ -16,6 +16,8 @@
 		283A2C7E1CD9FD2F00024EEB /* CAMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283A2C7D1CD9FD2F00024EEB /* CAMediaViewController.swift */; };
 		283A2C811CDA018E00024EEB /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283A2C801CDA018E00024EEB /* TimeLineViewController.swift */; };
 		286F8F2B1CDAE213008458C1 /* BallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F8F2A1CDAE213008458C1 /* BallViewController.swift */; };
+		286F8F2D1CDAE815008458C1 /* SuperBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F8F2C1CDAE815008458C1 /* SuperBallViewController.swift */; };
+		286F8F2F1CDB1A53008458C1 /* BaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F8F2E1CDB1A52008458C1 /* BaseTabbarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		283A2C7D1CD9FD2F00024EEB /* CAMediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAMediaViewController.swift; sourceTree = "<group>"; };
 		283A2C801CDA018E00024EEB /* TimeLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
 		286F8F2A1CDAE213008458C1 /* BallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallViewController.swift; sourceTree = "<group>"; };
+		286F8F2C1CDAE815008458C1 /* SuperBallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperBallViewController.swift; sourceTree = "<group>"; };
+		286F8F2E1CDB1A52008458C1 /* BaseTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabbarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 				283A2C7F1CDA017B00024EEB /* 10.2 */,
 				283A2C7C1CD9FD1100024EEB /* 10.1 */,
 				283A2C4E1CD9FCC700024EEB /* AppDelegate.swift */,
+				286F8F2E1CDB1A52008458C1 /* BaseTabbarController.swift */,
 				283A2C521CD9FCC700024EEB /* Main.storyboard */,
 				283A2C551CD9FCC700024EEB /* Assets.xcassets */,
 				283A2C571CD9FCC700024EEB /* LaunchScreen.storyboard */,
@@ -143,6 +148,7 @@
 			children = (
 				283A2C801CDA018E00024EEB /* TimeLineViewController.swift */,
 				286F8F2A1CDAE213008458C1 /* BallViewController.swift */,
+				286F8F2C1CDAE815008458C1 /* SuperBallViewController.swift */,
 			);
 			name = 10.2;
 			sourceTree = "<group>";
@@ -283,8 +289,10 @@
 			files = (
 				283A2C4F1CD9FCC700024EEB /* AppDelegate.swift in Sources */,
 				286F8F2B1CDAE213008458C1 /* BallViewController.swift in Sources */,
+				286F8F2F1CDB1A53008458C1 /* BaseTabbarController.swift in Sources */,
 				283A2C7E1CD9FD2F00024EEB /* CAMediaViewController.swift in Sources */,
 				283A2C811CDA018E00024EEB /* TimeLineViewController.swift in Sources */,
+				286F8F2D1CDAE815008458C1 /* SuperBallViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
