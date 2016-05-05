@@ -15,6 +15,7 @@
 		286F8F5D1CDB282D008458C1 /* _1_FrameAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F8F5C1CDB282D008458C1 /* _1_FrameAnimationUITests.swift */; };
 		286F8F6D1CDB30A1008458C1 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F8F6C1CDB30A1008458C1 /* TimerViewController.swift */; };
 		286F8F6F1CDB3E96008458C1 /* CADisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F8F6E1CDB3E96008458C1 /* CADisplayViewController.swift */; };
+		286F8F721CDB46F0008458C1 /* GravityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F8F711CDB46F0008458C1 /* GravityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		286F8F5E1CDB282D008458C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		286F8F6C1CDB30A1008458C1 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		286F8F6E1CDB3E96008458C1 /* CADisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CADisplayViewController.swift; sourceTree = "<group>"; };
+		286F8F711CDB46F0008458C1 /* GravityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		286F8F3B1CDB282D008458C1 /* 11-FrameAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				286F8F701CDB46CB008458C1 /* 11.2 */,
 				286F8F6B1CDB3079008458C1 /* 11.1 */,
 				286F8F3C1CDB282D008458C1 /* AppDelegate.swift */,
 				286F8F401CDB282D008458C1 /* Main.storyboard */,
@@ -134,6 +137,14 @@
 				286F8F6E1CDB3E96008458C1 /* CADisplayViewController.swift */,
 			);
 			name = 11.1;
+			sourceTree = "<group>";
+		};
+		286F8F701CDB46CB008458C1 /* 11.2 */ = {
+			isa = PBXGroup;
+			children = (
+				286F8F711CDB46F0008458C1 /* GravityViewController.swift */,
+			);
+			name = 11.2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +284,7 @@
 				286F8F6D1CDB30A1008458C1 /* TimerViewController.swift in Sources */,
 				286F8F3D1CDB282D008458C1 /* AppDelegate.swift in Sources */,
 				286F8F6F1CDB3E96008458C1 /* CADisplayViewController.swift in Sources */,
+				286F8F721CDB46F0008458C1 /* GravityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

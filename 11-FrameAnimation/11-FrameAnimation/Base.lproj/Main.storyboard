@@ -90,7 +90,13 @@
                             <constraint firstItem="0Dn-Ie-pFe" firstAttribute="centerX" secondItem="bk4-0H-Bel" secondAttribute="centerX" id="w6g-yo-eH2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="CADisplayLink" id="Nhm-zv-3OT"/>
+                    <navigationItem key="navigationItem" title="CADisplayLink" id="Nhm-zv-3OT">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="OiZ-wc-zf1">
+                            <connections>
+                                <segue destination="mYh-gc-yYC" kind="push" id="bY8-Sa-77R"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="containerView" destination="0Dn-Ie-pFe" id="zCe-fq-G7h"/>
                     </connections>
@@ -98,6 +104,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BCd-85-LNe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="670" y="408"/>
+        </scene>
+        <!--Gravity-->
+        <scene sceneID="BKq-I8-rs0">
+            <objects>
+                <viewController id="mYh-gc-yYC" customClass="GravityViewController" customModule="_1_FrameAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D8Q-D0-wbH"/>
+                        <viewControllerLayoutGuide type="bottom" id="FhX-vZ-QIz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SRz-3v-wNT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Gravity" id="hLG-DX-FlW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EQZ-nU-o4l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023" y="408"/>
         </scene>
     </scenes>
 </document>
