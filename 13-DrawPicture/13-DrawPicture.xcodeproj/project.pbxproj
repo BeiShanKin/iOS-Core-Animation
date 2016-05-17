@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		281612F71CEAEE6800178F04 /* LayerDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281612F61CEAEE6800178F04 /* LayerDrawView.swift */; };
 		281612F91CEAF14000178F04 /* NewDrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281612F81CEAF14000178F04 /* NewDrawViewController.swift */; };
+		281612FE1CEAF9EA00178F04 /* DirtyRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281612FD1CEAF9EA00178F04 /* DirtyRectView.swift */; };
 		28C9B30B1CEAC53A000B8990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C9B30A1CEAC53A000B8990 /* AppDelegate.swift */; };
 		28C9B3101CEAC53A000B8990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C9B30E1CEAC53A000B8990 /* Main.storyboard */; };
 		28C9B3121CEAC53A000B8990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C9B3111CEAC53A000B8990 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		281612F61CEAEE6800178F04 /* LayerDrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerDrawView.swift; sourceTree = "<group>"; };
 		281612F81CEAF14000178F04 /* NewDrawViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDrawViewController.swift; sourceTree = "<group>"; };
+		281612FD1CEAF9EA00178F04 /* DirtyRectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirtyRectView.swift; sourceTree = "<group>"; };
 		28C9B3071CEAC53A000B8990 /* 13-DrawPicture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "13-DrawPicture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C9B30A1CEAC53A000B8990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28C9B30F1CEAC53A000B8990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		281612FA1CEAF84400178F04 /* 13.3 */ = {
+			isa = PBXGroup;
+			children = (
+				281612FD1CEAF9EA00178F04 /* DirtyRectView.swift */,
+			);
+			name = 13.3;
+			sourceTree = "<group>";
+		};
 		28C9B2FE1CEAC53A000B8990 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 		28C9B3091CEAC53A000B8990 /* 13-DrawPicture */ = {
 			isa = PBXGroup;
 			children = (
+				281612FA1CEAF84400178F04 /* 13.3 */,
 				28C9B3381CEAC651000B8990 /* 13.2 */,
 				28C9B30A1CEAC53A000B8990 /* AppDelegate.swift */,
 				28C9B30E1CEAC53A000B8990 /* Main.storyboard */,
@@ -279,6 +290,7 @@
 				281612F71CEAEE6800178F04 /* LayerDrawView.swift in Sources */,
 				281612F91CEAF14000178F04 /* NewDrawViewController.swift in Sources */,
 				28C9B30B1CEAC53A000B8990 /* AppDelegate.swift in Sources */,
+				281612FE1CEAF9EA00178F04 /* DirtyRectView.swift in Sources */,
 				28C9B33A1CEAC69F000B8990 /* VectorDrawViewController.swift in Sources */,
 				28C9B33C1CEAD698000B8990 /* DrawView.swift in Sources */,
 			);
