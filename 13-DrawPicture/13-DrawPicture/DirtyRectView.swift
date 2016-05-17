@@ -27,14 +27,17 @@ class DirtyRectView: UIView {
         let touch = touches.first
         let point = touch?.locationInView(self)
         self.rects.append(getRect(point!))
-        self.setNeedsDisplay()
+        self.setNeedsDisplayInRect((self.rects.last?.CGRectValue())!)
     }
     
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         let touch = touches.first
         let point = touch?.locationInView(self)
         self.rects.append(getRect(point!))
-        self.setNeedsDisplay()
+        // 全局重绘（fps会随着重绘量的增加而降低）
+//        self.setNeedsDisplay()
+        // 指定区域重绘（fps可以一直稳定在60）
+        self.setNeedsDisplayInRect((self.rects.last?.CGRectValue())!)
     }
     
     func getRect(point: CGPoint) -> NSValue {
@@ -43,8 +46,11 @@ class DirtyRectView: UIView {
     
     override func drawRect(rect: CGRect) {
         for i in 0..<self.rects.count {
-            let rect = self.rects[i].CGRectValue()
-            self.image.drawInRect(rect)
+            let frame = self.rects[i].CGRectValue()
+            // 判断两个矩形是否有交集
+            if (CGRectIntersectsRect(rect, frame)) {
+                self.image.drawInRect(frame)
+            }
         }
     }
 }
