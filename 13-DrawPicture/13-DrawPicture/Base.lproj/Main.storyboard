@@ -62,7 +62,7 @@
         <!--13.2.2-->
         <scene sceneID="dMK-FD-oub">
             <objects>
-                <viewController id="Bnf-7l-gZy" sceneMemberID="viewController">
+                <viewController id="Bnf-7l-gZy" customClass="NewDrawViewController" customModule="_3_DrawPicture" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="saO-wz-jIb"/>
                         <viewControllerLayoutGuide type="bottom" id="idK-y5-3vM"/>
