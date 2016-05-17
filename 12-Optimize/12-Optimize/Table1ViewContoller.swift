@@ -48,16 +48,20 @@ class Table1ViewContoller: UIViewController,UITableViewDataSource {
         cell?.imageView?.image = UIImage.init(contentsOfFile: filePath!)
         cell?.textLabel?.text = item["name"]
         
-        cell?.imageView?.layer.shadowOffset = CGSize(width: 5, height: 5)
-        cell?.imageView?.layer.shadowOpacity = 0.75
+        cell?.imageView?.layer.cornerRadius = 22
+        cell?.imageView?.layer.borderWidth = 1.0
+        cell?.imageView?.layer.borderColor = UIColor.blackColor().CGColor
         cell?.imageView?.clipsToBounds = true
         
-        cell?.textLabel?.backgroundColor = UIColor.clearColor()
-        cell?.textLabel?.layer.shadowOffset = CGSize(width: 0, height: 2)
-        cell?.textLabel?.layer.shadowOpacity = 0.5
+//        cell?.imageView?.layer.shadowOffset = CGSize(width: 5, height: 5)
+//        cell?.imageView?.layer.shadowOpacity = 0.75
+////        cell?.imageView?.clipsToBounds = true
+//
+//        cell?.textLabel?.layer.shadowOffset = CGSize(width: 0, height: 2)
+//        cell?.textLabel?.layer.shadowOpacity = 0.5
         
-//        cell?.layer.shouldRasterize = true
-//        cell?.layer.rasterizationScale = UIScreen.mainScreen().scale
+        cell?.layer.shouldRasterize = true
+        cell?.layer.rasterizationScale = UIScreen.mainScreen().scale
         
         return cell!
     }
